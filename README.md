@@ -1,18 +1,16 @@
-# CART 253 Course Repo Website 
+# CART 253 Course Repository :guitar:
 
 John Hanna
 
-[View this project online](URL_FOR_THE_RUNNING_PROJECT)
+> ![Art](./images/dark.png)
 
 ## Description
 
 The purpose of this website is to have a working archive that holds all of my prototypes made in this class. Hopefully this can be folder of ideas that I can return to for further creative development. 
 
-> This course website for class code CART 253 is a working archive that holds all of John Hanna's prototypes made in this class.
+## Prototypes
 
-> The experience is controlled via the mouse, with left click selecting a clown and bringing up a menu of options such as "slip of banana peel" or "get into impossible capacious clown-car."
-
-> The project is meant to give the user a sense of what it would be the mayor of a town of clowns, eventually getting the sense that clowns are not taking their civic duties seriously.
+[View this project online](URL_FOR_THE_RUNNING_PROJECT) Placeholder
 
 ## Links
 
@@ -21,16 +19,14 @@ The purpose of this website is to have a working archive that holds all of my pr
 
 ## Screenshot(s)
 
-This bit should have some images of the program running so that the reader has a sense of what it looks like. For example:
-
-> ![Image of a clown face](./version-control-workflow/images/dark.png)
+This bit should have some images of the program running so that the reader has a sense of what it looks like. 
 
 ## Attribution
 
 This bit should attribute any code, assets or other elements used taken from other sources. For example:
 
 > - This project uses [p5.js](https://p5js.org).
-> - The clown image is a capture of the clown from the Apple emoji character set.
+> - The banner image is a work of digital art made in the now defunct Corel Vector (previously Gravit Designer) Software.
 > - The barking sound effect is "single dog bark 1" by crazymonke9 from freesound.org: https://freesound.org/people/crazymonke9/sounds/418107/
 
 ## License
