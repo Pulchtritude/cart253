@@ -17,8 +17,7 @@ The purpose of this website is to have a working archive that holds all of my pr
 ## Links
 
 1. [Reflective Journal](journal.md)
-2. [Itch.io](journal.md)
-3. [LinkedIn](journal.md)
+2. [Itch.io Page](https://f0lk3n.itch.io/)
 
 ## Screenshot(s)
 
