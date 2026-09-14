@@ -6,7 +6,7 @@ John Hanna
 
 ## Description
 
-The purpose of this website is to have a working archive that holds all of my prototypes made in this class.
+The purpose of this website is to have a working archive that holds all of my prototypes made in this class. Hopefully this can be folder of ideas that I can return to for further creative development. 
 
 > This course website for class code CART 253 is a working archive that holds all of John Hanna's prototypes made in this class.
 
