@@ -23,13 +23,10 @@ This bit should have some images of the program running so that the reader has a
 
 ## Attribution
 
-This bit should attribute any code, assets or other elements used taken from other sources. For example:
+This bit will attribute any code, assets or other elements used taken from other sources.
 
-> - This project uses [p5.js](https://p5js.org).
-> - The banner image is a work of digital art made by me!
+> - The banner above image is a work of digital art made by me!
 
 ## License
 
-This bit should include the license you want to apply to your work. For example:
-
-> This project is licensed under a Creative Commons Attribution ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.en)) license with the exception of libraries and other components with their own licenses.
+This bit will include relevant licenses that apply my your work.
