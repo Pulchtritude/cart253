@@ -6,11 +6,11 @@ John Hanna
 
 ## Description
 
-The purpose of this website is to have a working archive that holds all of my prototypes made in this class. Hopefully this can be folder of ideas that I can return to for further creative development. 
+This website serves as a working archive of all the prototypes I have created in this class. It also includes a link to a reflective journal, where I document my thoughts and feelings during or post the production of each prototype, as well as links to other platforms where I maintain an online presence. All that said, I sincerely hope this becomes a repository of ideas that I can return to for further creative development.
 
 ## Prototypes
 
-[View this project online](URL_FOR_THE_RUNNING_PROJECT) Placeholder
+None as of the current state of affairs
 
 ## Links
 
@@ -26,8 +26,7 @@ This bit should have some images of the program running so that the reader has a
 This bit should attribute any code, assets or other elements used taken from other sources. For example:
 
 > - This project uses [p5.js](https://p5js.org).
-> - The banner image is a work of digital art made in the now defunct Corel Vector (previously Gravit Designer) Software.
-> - The barking sound effect is "single dog bark 1" by crazymonke9 from freesound.org: https://freesound.org/people/crazymonke9/sounds/418107/
+> - The banner image is a work of digital art made by me!
 
 ## License
 
