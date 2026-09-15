@@ -1,21 +1,31 @@
 /**
- * Function Calls
+ * The Blank Page
  * John Hanna
  * 
- * Function Call Example, Practice, Walkthrough, etc. 
+ * An exploration of the existential angst 
+ * of a novelist who must sit down who must 
+ * sit down at their pink desk and confront 
+ * the abyss that is a blank page of paper.
+ * 
+ * The program is non-interactive to convey the innability
+ * To get started on the project. try typing! Just try it!
  */
 
 "use strict";
 
-
+/**
+ * Creates the canvas for our masterpiece
+ */
 function setup() {
-    // Once at the beginning of the program
+    // Create the canvas at the standard resolution
     createCanvas(640, 480);
 }
 
-
+/**
+ * Draws the writer's desktop and a blank piece of paper
+ */
 function draw() {
-    // Every frame
+    // The Pink desktop and a blank piece of paper
     background(255, 100, 100);
     rect(200, 80, 240, 320);
 }
