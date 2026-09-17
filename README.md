@@ -14,7 +14,7 @@ None as of the current state of affairs
 
 ## Challenges
 
-1. [Landscape](topics\instructions\instructions-challenge)
+1. [Landscape](topics\instructions\instructions-challenge/index.html)
 
 ## Links
 
