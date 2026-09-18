@@ -14,7 +14,7 @@ None as of the current state of affairs
 
 ## Challenges
 
-1. [Landscape](cart253/topics\instructions\instructions-challenge/index.html)
+1. [Landscape](https://pulchtritude.github.io/cart253/topics/instructions/instructions-challenge/index.html)
 
 ## Links
 
