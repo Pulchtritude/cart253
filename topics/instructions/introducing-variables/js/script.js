@@ -1,18 +1,17 @@
 /**
- * Title of Project
- * Author Name
+ * introducing-variables
+ * John Hanna
  * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * The Introducing variables module
  */
 
 "use strict";
 
 /**
- * OH LOOK I DIDN'T DESCRIBE SETUP!!
+ * Create a canvas
 */
 function setup() {
-
+    createCanvas(1000, 480);
 }
 
 
@@ -20,5 +19,12 @@ function setup() {
  * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
 */
 function draw() {
+    background(0);
 
+    // Draw a Circle
+    push();
+    fill(255, 255, 0);
+    noStroke();
+    ellipse(mouseX, mouseY, 100, 100);
+    pop();
 }
