@@ -1,9 +1,8 @@
 /**
- * Title of Project
- * Author Name
+ * Fear of the Dark
+ * John Hanna
  * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * Shows face enveloped in darkness with a sinster set of eyes overhead
  */
 
 "use strict";
@@ -16,7 +15,7 @@ function setup() {
 }
 
 /**
- * Draws Light Cycle and Street
+ * Draws face and creepy eyes
 */
 function draw() {
     background(0);
@@ -39,7 +38,7 @@ function draw() {
 
 function drawEyes(x) {
 
-    //Wheel
+    //Eyes
     push();
     fill("#1c1c1c");
     noStroke();

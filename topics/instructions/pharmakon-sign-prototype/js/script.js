@@ -1,9 +1,8 @@
 /**
- * Title of Project
- * Author Name
+ * Pharmakon Sign
+ * John Hanna
  * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * Shows a sign that represent's derrida's concept
  */
 
 "use strict";
