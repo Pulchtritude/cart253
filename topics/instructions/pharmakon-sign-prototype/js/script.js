@@ -7,6 +7,12 @@
 
 "use strict";
 
+let crossColor = {
+    r: 255,
+    g: 255,
+    b: 0
+};
+
 /**
  * Creates canvas
 */
@@ -23,8 +29,33 @@ function draw() {
     // Draw's sign base
     push();
     fill("#FFCC00");
-    strokeWidth(3);
+    strokeWeight(25);
     stroke("#970000");
-    triangle(400, 880);
+    triangle(500, 200, 200, 700, 800, 700);
     pop();
+
+    // Cross
+    drawCross();
+}
+
+
+function drawCross() {
+    crossColor.r = map(mouseX, 0, width, 0, 255);
+    crossColor.g = map(mouseX, 0, width, 255, 0);
+
+    rectMode(CENTER);
+
+    push();
+    fill(crossColor.r, crossColor.g, crossColor.b);
+    noStroke();
+    rect(500, 525, 100, 290);
+    pop();
+
+    push();
+    fill(crossColor.r, crossColor.g, crossColor.b);
+    noStroke();
+    rect(500, 525, 300, 100);
+    pop();
+
+
 }
