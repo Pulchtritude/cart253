@@ -2,13 +2,13 @@
  * Pharmakon Sign
  * John Hanna
  * 
- * Shows a sign that represent's derrida's concept
+ * Shows a sign that represent's the impetus derrida's "post-structuralist" concept of the binary opposition
  */
 
 "use strict";
 
 /**
- * OH LOOK I DIDN'T DESCRIBE SETUP!!
+ * Creates canvas
 */
 function setup() {
     createCanvas(1000, 1000);
