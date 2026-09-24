@@ -55,6 +55,7 @@ function drawCycle() {
     strokeWeight(5);
     stroke("#7DFDFE");
     ellipse(475, 860, 200, 70);
+    pop();
 
     // Draws seat
     push();
