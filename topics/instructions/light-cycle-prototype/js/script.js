@@ -42,26 +42,33 @@ function drawWheel(x) {
     //Wheel
     push();
     fill("#363636");
-    strokeWeight(10)
-    stroke("#7DFDFE")
+    strokeWeight(10);
+    stroke("#7DFDFE");
     ellipse(x, wheel.y, wheel.s);
     pop();
 }
 
 function drawCycle() {
+    // Draws Console
+    push();
+    fill("#363636");
+    strokeWeight(5);
+    stroke("#7DFDFE");
+    ellipse(475, 860, 200, 70);
+
     // Draws seat
     push();
     fill("#363636");
-    strokeWeight(5)
-    stroke("#7DFDFE")
+    strokeWeight(5);
+    stroke("#7DFDFE");
     rect(320, 860, 160, 35);
     pop();
 
     // Draws engine
     push();
     fill("#363636");
-    strokeWeight(5)
-    stroke("#7DFDFE")
+    strokeWeight(5);
+    stroke("#7DFDFE");
     triangle(400, 880, 600, 900, 600, 840);
     pop();
 
