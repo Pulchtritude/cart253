@@ -7,4 +7,6 @@ The most engaging part was understanding the workflow between VS Code, GitHub De
 
 With that in mind, I would like my work in this class to instill affect in others, though I am not yet sure what form that will take. Still, I wonder how much programming ability I will need to commit to such a creative aspiration. That said, I also wonder what kind of creation I am capable of given the limitations of my knowledge. Needless to say, I look forward to that process of discovery.
 
-![Webpage Screenshot](./images/Screenshot.jpg)
+[Webpage Screenshot](./images/Screenshot.jpg)
+
+## 9/24/26
