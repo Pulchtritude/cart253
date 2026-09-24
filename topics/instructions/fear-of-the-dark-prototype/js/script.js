@@ -20,7 +20,7 @@ function setup() {
 function draw() {
     background(0);
 
-    drawFace(mouseX, mouseY);
+    drawFace();
 
     // Draws eyes
     push();
