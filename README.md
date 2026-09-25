@@ -12,15 +12,15 @@ This website serves as a working archive of all the prototypes I have created in
 
 1. [Tron Light Cycle](https://pulchtritude.github.io/cart253/topics/instructions/light-cycle-prototype/index.html)
     [Code](https://github.com/Pulchtritude/cart253/blob/main/topics/instructions/light-cycle-prototype/js/script.js)
-> ![Light Cycle](./images/dark.png)
+> ![Light Cycle](./images/light cycle.png)
 
 2. [Fear of the Dark](https://pulchtritude.github.io/cart253/topics/instructions/fear-of-the-dark-prototype/index.html)
     [Code](https://github.com/Pulchtritude/cart253/blob/main/topics/instructions/fear-of-the-dark-prototype/js/script.js)
-> ![The Dark](./images/dark.png)
+> ![The Dark](./images/the dark.png)
 
 3. [Pharmakon Sign](https://pulchtritude.github.io/cart253/topics/instructions/pharmakon-sign-prototype/index.html)
     [Code](https://github.com/Pulchtritude/cart253/blob/main/topics/instructions/pharmakon-sign-prototype/js/script.js)
-> ![Pharmakon](./images/dark.png)
+> ![Pharmakon](./images/pharmakon.png)
 
 ## Challenges
 

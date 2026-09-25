@@ -2,12 +2,14 @@
  * Light Cycle
  * John Hanna
  * 
- * Tron Light Cycle; it can move from left to right and vice versa
+ * The iconic light cycle from the film Tron Legacy
  */
 
 "use strict";
 
-// Wheel Object
+/** 
+ * Defines y and s values of the Wheel Object
+*/
 let wheel = {
     y: 875,
     s: 75,
@@ -39,7 +41,7 @@ function draw() {
 
 function drawWheel(x) {
 
-    //Wheel
+    // Draw Wheel specifications
     push();
     fill("#363636");
     strokeWeight(10);
@@ -49,6 +51,7 @@ function drawWheel(x) {
 }
 
 function drawCycle() {
+
     // Draws Console
     push();
     fill("#363636");

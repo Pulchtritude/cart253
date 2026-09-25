@@ -2,7 +2,8 @@
  * Fear of the Dark
  * John Hanna
  * 
- * Shows face enveloped in darkness with a sinster set of eyes overhead
+ * Shows face enveloped in darkness with a sinster set of eyes overhead. 
+ * Can be interpreted as the "fear" we make up in our heads. The monster in the dark that is not there.
  */
 
 "use strict";
@@ -20,6 +21,7 @@ function setup() {
 function draw() {
     background(0);
 
+    // Draws Face
     drawFace();
 
     // Draws eyes
