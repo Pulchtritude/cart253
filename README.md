@@ -10,17 +10,17 @@ This website serves as a working archive of all the prototypes I have created in
 
 ## Prototypes
 
-### Tron Light Cycle
+### Tron Light Cycle - Prototyping: Instructions
 - [View Online](https://pulchtritude.github.io/cart253/topics/instructions/light-cycle-prototype/index.html)
 - [Code](https://github.com/Pulchtritude/cart253/blob/main/topics/instructions/light-cycle-prototype/js/script.js)
 > ![Light Cycle](./images/light-cycle.png)
 
-### Fear of the Dark
+### Fear of the Dark - Prototyping: Instructions
 - [View Online](https://pulchtritude.github.io/cart253/topics/instructions/fear-of-the-dark-prototype/index.html)
 - [Code](https://github.com/Pulchtritude/cart253/blob/main/topics/instructions/fear-of-the-dark-prototype/js/script.js)
 > ![The Dark](./images/the-dark.png)
 
-### Pharmakon Sign
+### Pharmakon Sign - Prototyping: Instructions
 - [View Online](https://pulchtritude.github.io/cart253/topics/instructions/pharmakon-sign-prototype/index.html)
 - [Code](https://github.com/Pulchtritude/cart253/blob/main/topics/instructions/pharmakon-sign-prototype/js/script.js)
 > ![Pharmakon](./images/pharmakon.png)
@@ -41,10 +41,6 @@ This website serves as a working archive of all the prototypes I have created in
 
 1. [Reflective Journal](journal.md)
 2. [Itch.io Page](https://f0lk3n.itch.io/)
-
-## Screenshot(s)
-
-This bit should have some images of the program running so that the reader has a sense of what it looks like. 
 
 ## Attribution
 

@@ -10,3 +10,12 @@ With that in mind, I would like my work in this class to instill affect in other
 [Webpage Screenshot](./images/Screenshot.jpg)
 
 ## 9/24/26
+My experience making these prototypes was quite stimulating. The first two I made (Light Cycle and Fear of the Dark) were done in the evening, and for whatever reason, I found a kind of enjoyment programming them at that time. I can't quite describe the feeling, but I know it's a kind of affect that I currently lack the language to name. Perhaps Deleuze or Spinoza have the words for it.
+
+I pursued the first two in conjunction with completing the exercises in preparation for today's class. While trying to implement some of the new techniques, I found myself struggling to fully grasp variables and how they differ from functions. Thankfully, after class, I gained a somewhat better understanding of these distinctions, though I still need more work to solidify my comprehension. Moreover, there are a couple of prototypes I would like to iterate on in the future; this would be when I have the capacity to animate them in the ways I envision.
+
+In terms of the creative process itself, I found myself gravitating toward the model provided in the directions: to create representational, abstract, and weird prototypes. I find that the results were pretty apt, although I struggled to grasp the difference between abstract and weird. For the two prototypes this entailed (Fear of the Dark and the pharmakon sign), I think both abstract and weird can be used to describe them interchangeably.
+
+Overall, I find Fear of the Dark and the pharmakon sign to be much more interesting than the light cycle prototype. This is simply because the other two seemed to spark a more fruitful hermeneutic practice in those who viewed them during the demo sections of the class. The initial interpretations people had upon observing Fear of the Dark, in particular, were plentiful and allowed me to think about it in different ways. The light cycle, on the other hand, doesn't spark such discussion; it lies in this distinctly postmodern realm of simply "being cool", because it is a representation of what pop culture "sold to us" as cool. 
+
+In this instance, I use air quotes because who are we kidding, Tron is awesome!
