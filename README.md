@@ -10,27 +10,32 @@ This website serves as a working archive of all the prototypes I have created in
 
 ## Prototypes
 
-1. [Tron Light Cycle](https://pulchtritude.github.io/cart253/topics/instructions/light-cycle-prototype/index.html)
-    [Code](https://github.com/Pulchtritude/cart253/blob/main/topics/instructions/light-cycle-prototype/js/script.js)
+### Tron Light Cycle
+- [View Online](https://pulchtritude.github.io/cart253/topics/instructions/light-cycle-prototype/index.html)
+- [Code](https://github.com/Pulchtritude/cart253/blob/main/topics/instructions/light-cycle-prototype/js/script.js)
 > ![Light Cycle](./images/light-cycle.png)
 
-2. [Fear of the Dark](https://pulchtritude.github.io/cart253/topics/instructions/fear-of-the-dark-prototype/index.html)
-    [Code](https://github.com/Pulchtritude/cart253/blob/main/topics/instructions/fear-of-the-dark-prototype/js/script.js)
+### Fear of the Dark
+- [View Online](https://pulchtritude.github.io/cart253/topics/instructions/fear-of-the-dark-prototype/index.html)
+- [Code](https://github.com/Pulchtritude/cart253/blob/main/topics/instructions/fear-of-the-dark-prototype/js/script.js)
 > ![The Dark](./images/the-dark.png)
 
-3. [Pharmakon Sign](https://pulchtritude.github.io/cart253/topics/instructions/pharmakon-sign-prototype/index.html)
-    [Code](https://github.com/Pulchtritude/cart253/blob/main/topics/instructions/pharmakon-sign-prototype/js/script.js)
+### Pharmakon Sign
+- [View Online](https://pulchtritude.github.io/cart253/topics/instructions/pharmakon-sign-prototype/index.html)
+- [Code](https://github.com/Pulchtritude/cart253/blob/main/topics/instructions/pharmakon-sign-prototype/js/script.js)
 > ![Pharmakon](./images/pharmakon.png)
 
 ## Challenges
 
-1. [Landscape](https://pulchtritude.github.io/cart253/topics/instructions/instructions-challenge/index.html)
-    [Code](https://github.com/Pulchtritude/cart253/blob/main/topics/instructions/instructions-challenge/js/script.js)
-> ![Art](./images/dark.png)
+### Landscape
+- [View Online](https://pulchtritude.github.io/cart253/topics/instructions/instructions-challenge/index.html)
+- [Code](https://github.com/Pulchtritude/cart253/blob/main/topics/instructions/instructions-challenge/js/script.js)
+> ![Art](./images/land.png)
 
-2. [Ragebaiting Mr Furious](https://hikki0001.github.io/cart253-testing/Challenge-Variables/index.html)
-    [Code](https://github.com/Hikki0001/cart253-testing/tree/main/Challenge-Variables)
-> ![Art](./images/dark.png)
+### Ragebaiting Mr. Furious
+- [View Online](https://hikki0001.github.io/cart253-testing/Challenge-Variables/index.html)
+- [Code](https://github.com/Hikki0001/cart253-testing/tree/main/Challenge-Variables)
+> ![Art](./images/furious.png)
 
 ## Links
 
