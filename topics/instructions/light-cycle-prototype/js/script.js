@@ -38,7 +38,9 @@ function draw() {
     // Draws Cycle
     drawCycle();
 }
-
+/**
+ * Draws wheels, defines 
+ */
 function drawWheel(x) {
 
     // Draw Wheel specifications
