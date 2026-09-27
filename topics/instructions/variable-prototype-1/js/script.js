@@ -11,11 +11,7 @@
 let building = {
     x: 10,
     y: 50,
-    s: 200
-
-};
-
-let buildingColor = {
+    s: 200,
     r: 172,
     g: 172,
     b: 172
@@ -34,7 +30,7 @@ function setup() {
 */
 function draw() {
     pop();
-    fill(buildingColor.r, buildingColor.g, buildingColor.b);
+    fill(building.r, building.g, building.b);
     push();
 
 }
