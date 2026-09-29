@@ -16,9 +16,9 @@
  */
 let capital = {
     // Defines color of capital
-    r: 255,
-    g: 255,
-    b: 255,
+    r: 254,
+    g: 254,
+    b: 254,
 
     // Defines position of capital
     position: {
@@ -63,6 +63,10 @@ let capital = {
 */
 function setup() {
     createCanvas(1920, 1200);
+
+    // Load the audio.
+    let beat = createAudio('/.assets/sounds/scof.mp3');
+
 }
 
 /**
@@ -79,13 +83,13 @@ function draw() {
     push();
 
     // Controls the "cancelation's" slow and progressive emergence as a kind of dark malevolence (capital)
-    capital.r -= 0.005
-    capital.g -= 0.005
-    capital.b -= 0.005
+    capital.r -= 0.001
+    capital.g -= 0.001
+    capital.b -= 0.001
 
     // Controls the "cancelation's" movement and size as it envelops the future that is your screen (capital)
-    capital.position.x += 0.1
-    capital.position.y -= 0.1
+    capital.position.x += 0.05
+    capital.position.y -= 0.05
     capital.size.w += 0.05
     capital.size.h += 0.05
 
