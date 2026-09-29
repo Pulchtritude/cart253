@@ -1,5 +1,5 @@
 /**
- * Title of Project
+ * I don't know yet...
  * Author Name
  * 
  * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
@@ -9,15 +9,15 @@
 "use strict";
 
 /**
- * OH LOOK I DIDN'T DESCRIBE SETUP!!
+ * creates canvas
 */
 function setup() {
-
+    createCanvas(1000, 1000)
 }
 
 
 /**
- * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
+ * Draws Scene
 */
 function draw() {
 
