@@ -59,9 +59,9 @@ function draw() {
     noStroke();
     push();
 
-    building.r -= 0.001
-    building.g -= 0.001
-    building.b -= 0.001
+    building.r -= 0.005
+    building.g -= 0.005
+    building.b -= 0.005
 
     building.position.x += 0.1
     building.position.y -= 0.1
