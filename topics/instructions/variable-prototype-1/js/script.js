@@ -1,5 +1,5 @@
 /**
- * Building?
+ * The Slow Cancelation of the Future
  * Author Name
  * 
  * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
@@ -14,7 +14,7 @@ let building = {
     b: 255,
     position: {
         x: 0,
-        y: 900,
+        y: 1000,
     },
     minPosition: {
         x: -1,
@@ -56,16 +56,17 @@ function draw() {
     pop();
     fill(building.r, building.g, building.b);
     rect(building.position.x, building.position.y, building.size.w, building.size.h);
+    noStroke();
     push();
 
-    building.r -= 0.15
-    building.g -= 0.15
-    building.b -= 0.15
+    building.r -= 0.001
+    building.g -= 0.001
+    building.b -= 0.001
 
-    building.position.x += 0.5
-    building.position.y -= 0.5
-    building.size.w += 0.5
-    building.size.h += 0.5
+    building.position.x += 0.1
+    building.position.y -= 0.1
+    building.size.w += 0.05
+    building.size.h += 0.05
 
     building.position.x = constrain(building.position.x, building.minPosition.x, building.maxPosition.x);
     building.position.y = constrain(building.position.y, building.minPosition.y, building.maxPosition.y);
