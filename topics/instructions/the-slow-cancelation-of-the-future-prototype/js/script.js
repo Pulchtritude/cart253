@@ -3,24 +3,25 @@
  * John Hanna
  * 
  * An almost comedic (literal) representation of Mark Fisher's
- * "Slow Cancelation of the Future" concept.
+ * "Slow Cancelation of the Future" concept. 
  * 
- * Play his lecture on the topic in the background for added dark flavor of comedy.
+ * By clicking with your mouse, you begin his lecture on his concept
+ * as explored in his book "Ghosts of my Life"
+ * 
+ * RIP Mark Fisher
  * 
  */
 
 "use strict";
-
-
 
 /** 
  * Defines a variable called capital and all of it's relevent specifications
  */
 let capital = {
     // Defines color of capital
-    r: 254,
-    g: 254,
-    b: 254,
+    r: 255,
+    g: 255,
+    b: 255,
 
     // Defines position of capital
     position: {
