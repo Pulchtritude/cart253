@@ -11,6 +11,8 @@
 
 "use strict";
 
+
+
 /** 
  * Defines a variable called capital and all of it's relevent specifications
  */
@@ -58,15 +60,19 @@ let capital = {
 
 };
 
+let fisher;
+
 /**
  * Create's canvas, or in this case, the future 
 */
 function setup() {
     createCanvas(1920, 1200);
 
-    // Load the audio.
-    let beat = createAudio('/.assets/sounds/scof.mp3');
+    fisher = createAudio('assets/sounds/scof.mp3');
+}
 
+function mousePressed() {
+    fisher.play();
 }
 
 /**
