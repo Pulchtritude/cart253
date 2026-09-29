@@ -76,11 +76,11 @@ function draw() {
     // Defines background of canvas (the future) as white, or perhaps, blank, hmmmm....
     background(255);
 
-    pop();
+    push();
     fill(capital.r, capital.g, capital.b);
     rect(capital.position.x, capital.position.y, capital.size.w, capital.size.h);
     noStroke();
-    push();
+    pop();
 
     // Controls the "cancelation's" slow and progressive emergence as a kind of dark malevolence (capital)
     capital.r -= 0.001

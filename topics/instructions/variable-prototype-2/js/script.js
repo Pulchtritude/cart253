@@ -1,9 +1,8 @@
 /**
- * I don't know yet...
- * Author Name
+ * The Moon
+ * John Hanna
  * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * It slowly encroaches; every year it gets closer and closer to us. What does this mean
  */
 
 "use strict";
@@ -23,21 +22,21 @@ let moon = {
 
     // Defines size of moon
     size: {
-        w: 250,
-        h: 500,
-    },
+        w: 10,
+        h: 10,
+    }
 };
 
 /**
- * creates canvas
+ * Creates space: the black void
 */
 function setup() {
-    createCanvas(1000, 1000)
+    createCanvas(1000, 1000);
 }
 
 
 /**
- * Draws the sky
+ * Draws the scene
 */
 function draw() {
     background(0);
@@ -46,7 +45,10 @@ function draw() {
 
     push();
     fill(moon.r, moon.g, moon.b);
-
+    ellipse(moon.position.x, moon.position.y, moon.size.w, moon.size.h);
+    noStroke();
     pop();
 
+    moon.size.w += 0.01
+    moon.size.h += 0.01
 }
