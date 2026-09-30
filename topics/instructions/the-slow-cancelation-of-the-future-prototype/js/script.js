@@ -61,6 +61,10 @@ let capital = {
 
 };
 
+
+/**
+ * Creates/defines a variable named "fisher"
+*/
 let fisher;
 
 /**
@@ -72,6 +76,9 @@ function setup() {
     fisher = createAudio('assets/sounds/scof.mp3');
 }
 
+/**
+ * When the program detects a mouse press, audio stored in "fisher" variable will play
+*/
 function mousePressed() {
     fisher.play();
 }
@@ -83,6 +90,7 @@ function draw() {
     // Defines background of canvas (the future) as white, or perhaps, blank, hmmmm....
     background(255);
 
+    // Creates the "cancelation" / Capital
     push();
     fill(capital.r, capital.g, capital.b);
     rect(capital.position.x, capital.position.y, capital.size.w, capital.size.h);
