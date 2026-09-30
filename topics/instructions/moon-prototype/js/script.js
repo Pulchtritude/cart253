@@ -2,7 +2,10 @@
  * The Moon
  * John Hanna
  * 
- * It slowly encroaches; every year it gets closer and closer to us. What does this mean
+ * It slowly encroaches; every year it gets closer and closer to us. 
+ * The moon normally gets farther from us every year, what if it was closer?
+ * Thats also kind of horrifying, but the closer it gets, the more beautiful it is 
+ * in a morbid way.
  */
 
 "use strict";
