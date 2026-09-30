@@ -3,9 +3,11 @@
  * John Hanna
  * 
  * It slowly encroaches; every year it gets closer and closer to us. 
- * The moon normally gets farther from us every year, what if it was closer?
- * Thats also kind of horrifying, but the closer it gets, the more beautiful it is 
- * in a morbid way.
+ * --
+ * The moon normally gets farther from us every year, but what if it was getting closer to us instead?
+ * Thats also kind of horrifying, but the closer it gets, 
+ * the more we are graced by the moon's beauty:
+ * in a morbid way of course...
  */
 
 "use strict";
