@@ -1,22 +1,32 @@
 /**
- * Title of Project
- * Author Name
+ * Sad to Happy
+ * John Hanna
  * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * This project doesn't assume that the only two emotional states are happiness
+ * and sadness, but it does assume that to feel happy takes an amount of effort.
  */
 
 "use strict";
 
 let sad = {
-    // Defines color and position of perfection
+    // Defines color and position of sadness
+    red: 0,
+    green: 0,
+    blue: 255,
+    x: 250,
+    y: 300,
+    w: 400,
+    h: 300,
+};
+
+let happy = {
+    // Defines color and position of happiness
     red: 0,
     green: 0,
     blue: 255,
     x: 500,
     y: 500,
     s: 500,
-
 };
 
 /**
@@ -30,16 +40,15 @@ function setup() {
  * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
 */
 function draw() {
-    drawPerfectSquare();
+    drawSadSquare();
+    drawHappySquare();
 }
 
-function drawPerfectSquare() {
-
-    rectMode(CENTER);
+function drawSadSquare() {
 
     push();
     fill(sad.red, sad.green, sad.blue);
     noStroke();
-    rect(sad.x, sad.y, sad.s);
+    rect(sad.x, sad.y, sad.w, sad.h);
     pop();
 }
