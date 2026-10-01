@@ -25,6 +25,16 @@ This website serves as a working archive of all the prototypes I have created in
 - [Code](https://github.com/Pulchtritude/cart253/blob/main/topics/instructions/pharmakon-sign-prototype/js/script.js)
 > ![Pharmakon](./images/pharmakon.png)
 
+### The Slow Cancelation of the Future - Prototyping: Variables
+- [View Online](https://pulchtritude.github.io/cart253/topics/instructions/the-slow-cancelation-of-the-future-prototype/index.html)
+- [Code](https://github.com/Pulchtritude/cart253/blob/main/topics/instructions/the-slow-cancelation-of-the-future-prototype/js/script.js)
+> ![SCOF](./images/scof.png)
+
+### The Moon - Prototyping: Variables
+- [View Online](https://pulchtritude.github.io/cart253/topics/instructions/moon-prototype/index.html)
+- [Code](https://github.com/Pulchtritude/cart253/blob/main/topics/instructions/moon-prototype/js/script.js)
+> ![SCOF](./images/scof.png)
+
 ## Challenges
 
 ### Landscape

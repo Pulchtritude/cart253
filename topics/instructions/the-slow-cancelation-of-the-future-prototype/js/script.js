@@ -2,11 +2,11 @@
  * The Slow Cancelation of the Future
  * John Hanna
  * 
- * An almost comedic (literal) representation of Mark Fisher's
+ * A representation of Mark Fisher's
  * "Slow Cancelation of the Future" concept. 
  * 
  * By clicking with your mouse, you begin his lecture on his concept
- * as explored in his book "Ghosts of my Life"
+ * as explored in his book "Ghosts of my Life". It goes on 40 minutes.
  * 
  * RIP Mark Fisher
  * 
@@ -68,11 +68,12 @@ let capital = {
 let fisher;
 
 /**
- * Create's canvas, or in this case, the future 
+ * Create's canvas, or in this case, the future + loads audio file
 */
 function setup() {
     createCanvas(1920, 1200);
 
+    // Presumebly loads the audio file into memory when the program starts
     fisher = createAudio('assets/sounds/scof.mp3');
 }
 
@@ -103,10 +104,10 @@ function draw() {
     capital.b -= 0.001
 
     // Controls the "cancelation's" movement and size as it envelops the future that is your screen (capital)
-    capital.position.x += 0.05
-    capital.position.y -= 0.05
-    capital.size.w += 0.05
-    capital.size.h += 0.05
+    capital.position.x += 0.01
+    capital.position.y -= 0.01
+    capital.size.w += 0.01
+    capital.size.h += 0.01
 
     // Constrains the "cancelation's" position
     capital.position.x = constrain(capital.position.x, capital.minPosition.x, capital.maxPosition.x);
