@@ -40,8 +40,8 @@ function setup() {
  * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
 */
 function draw() {
+
     drawSadSquare();
-    drawHappySquare();
 }
 
 function drawSadSquare() {
@@ -50,5 +50,14 @@ function drawSadSquare() {
     fill(sad.red, sad.green, sad.blue);
     noStroke();
     rect(sad.x, sad.y, sad.w, sad.h);
+    pop();
+}
+
+function drawHappySquare() {
+
+    push();
+    fill(happy.red, happy.green, happy.blue);
+    noStroke();
+    rect(happy.x, happy.y, happy.w, happy.h);
     pop();
 }
