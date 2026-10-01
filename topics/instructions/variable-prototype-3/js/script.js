@@ -8,17 +8,38 @@
 
 "use strict";
 
+let sad = {
+    // Defines color and position of perfection
+    red: 0,
+    green: 0,
+    blue: 255,
+    x: 500,
+    y: 500,
+    s: 500,
+
+};
+
 /**
- * OH LOOK I DIDN'T DESCRIBE SETUP!!
+ * Creates canves
 */
 function setup() {
-
+    createCanvas(1000, 1000);
 }
-
 
 /**
  * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
 */
 function draw() {
+    drawPerfectSquare();
+}
 
+function drawPerfectSquare() {
+
+    rectMode(CENTER);
+
+    push();
+    fill(sad.red, sad.green, sad.blue);
+    noStroke();
+    rect(sad.x, sad.y, sad.s);
+    pop();
 }
