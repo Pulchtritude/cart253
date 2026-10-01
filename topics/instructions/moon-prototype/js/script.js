@@ -9,6 +9,9 @@
  * but the closer it gets, 
  * the more we are graced by the moon's beauty:
  * in a morbid way of course...
+ * 
+ * Audio file from Freesound.org
+ * 
  */
 
 "use strict";
