@@ -78,6 +78,6 @@ function draw() {
     pop();
 
     // Simulates the moon geting closer and closer by increasing it's width and height every frame
-    moon.size.w += 0.1
-    moon.size.h += 0.1
+    moon.size.w += 0.05
+    moon.size.h += 0.05
 }
