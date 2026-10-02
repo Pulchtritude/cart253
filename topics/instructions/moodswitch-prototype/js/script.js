@@ -1,5 +1,5 @@
 /**
- * Sad to Happy
+ * Moodswitch
  * John Hanna
  * 
  * This project doesn't assume that the only two emotional states are happiness
@@ -8,12 +8,18 @@
 
 "use strict";
 
+/**
+ * Defines a variable called moodswitch that is off (false) by default
+*/
 let moodSwitch = {
     on: false
 };
 
+/**
+ * Defines a variable called sad
+*/
 let sad = {
-    // Defines color and position of sadness
+    // Defines color, position, and size of sadness
     red: 0,
     green: 0,
     blue: 255,
@@ -23,8 +29,11 @@ let sad = {
     h: 300,
 };
 
+/**
+ * Defines a variable called happy
+*/
 let happy = {
-    // Defines color and position of happiness
+    // Defines color, position, and size of happiness
     red: 255,
     green: 255,
     blue: 0,
@@ -38,26 +47,29 @@ let happy = {
 */
 function setup() {
     createCanvas(1000, 1000);
-
 }
 
 /**
- * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
+ * If player presses and holds mouse, square becomes yellow and equilateral.
+ * If player lets go of mouse, square goes from yellow back to the default sad 
+ * and slightly mishaped blue :(
 */
 function draw() {
     background(0);
     checkIfHappy();
     displayMood();
-
-    // if player presses and holds mouse, square becomes yellow and equilateral,
-    // if player lets go of mouse, square goes from yellow back to the default sad and slightly mishaped blue :(
 }
 
+/**
+ * Defines a conditonal function that checks and defines the mechanic of the moodswitch
+*/
 function checkIfHappy() {
-
+    // If mouse is pressed, the moodswitch turns on
     if (mouseIsPressed) {
         moodSwitch.on = true;
     }
+    // If mouse is unpressed, the moodswitch turns off, 
+    // erasing the happy square function and redrawing the background
     else {
         moodSwitch.on = false;
         erase();
@@ -67,20 +79,27 @@ function checkIfHappy() {
     }
 }
 
+/**
+ * Defines a conditonal function that displays the output as a result of the happy check function
+*/
 function displayMood() {
+    // If mouse is pressed, happy square is drawn
     if (moodSwitch.on) {
         drawHappySquare();
     }
+    // If mouse is unpressed, sad square is
     else {
         drawSadSquare();
     }
 }
 
-
+/**
+ * Defines a draw function that specifies a sad sqaure
+*/
 function drawSadSquare() {
-
+    // Centers rect shape
     rectMode(CENTER)
-
+    // Draws sad square
     push();
     fill(sad.red, sad.green, sad.blue);
     noStroke();
@@ -88,10 +107,13 @@ function drawSadSquare() {
     pop();
 }
 
+/**
+ * Defines a draw function that specifies a happy sqaure
+*/
 function drawHappySquare() {
-
+    // Centers rect shape
     rectMode(CENTER)
-
+    // Draws happy square
     push();
     fill(happy.red, happy.green, happy.blue);
     noStroke();

@@ -25,7 +25,6 @@ let space;
  * Creates/defines a variable named "moon"
 */
 let moon = {
-
     // Defines the color of the moon (white)
     r: 255,
     g: 255,
@@ -52,7 +51,6 @@ function setup() {
 
     // Presumebly loads the audio file into memory when the program starts
     space = createAudio('assets/sounds/space-ambience.wav');
-
 }
 
 /**
@@ -66,7 +64,6 @@ function mousePressed() {
  * Draws the scene
 */
 function draw() {
-
     // Draws Space (the black void)
     background(0);
 

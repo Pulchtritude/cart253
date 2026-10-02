@@ -62,9 +62,7 @@ let capital = {
         w: 1920,
         h: 1200,
     },
-
 };
-
 
 /**
  * Creates/defines a variable named "fisher"
@@ -120,5 +118,4 @@ function draw() {
     // Constrains the "cancelation's" size
     capital.size.w = constrain(capital.size.w, capital.minSize.w, capital.maxSize.w);
     capital.size.h = constrain(capital.size.h, capital.minSize.h, capital.maxSize.h);
-
 }
