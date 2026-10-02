@@ -33,7 +33,12 @@ This website serves as a working archive of all the prototypes I have created in
 ### The Moon - Prototyping: Variables
 - [View Online](https://pulchtritude.github.io/cart253/topics/instructions/moon-prototype/index.html)
 - [Code](https://github.com/Pulchtritude/cart253/blob/main/topics/instructions/moon-prototype/js/script.js)
-> ![SCOF](./images/moon.png)
+> ![Moon](./images/moon.png)
+
+### Moodswitch - Prototyping: Variables
+- [View Online](https://pulchtritude.github.io/cart253/topics/instructions/moodswitch-prototype/index.html)
+- [Code](https://github.com/Pulchtritude/cart253/blob/main/topics/instructions/moodswitch-prototype/js/script.js)
+> ![Switch](./images/moon.png)
 
 ## Challenges
 
