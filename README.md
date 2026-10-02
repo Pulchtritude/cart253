@@ -38,7 +38,7 @@ This website serves as a working archive of all the prototypes I have created in
 ### Moodswitch - Prototyping: Variables
 - [View Online](https://pulchtritude.github.io/cart253/topics/instructions/moodswitch-prototype/index.html)
 - [Code](https://github.com/Pulchtritude/cart253/blob/main/topics/instructions/moodswitch-prototype/js/script.js)
-> ![Switch](./images/moon.png)
+> ![Switch](./images/switch.png)
 
 ## Challenges
 
