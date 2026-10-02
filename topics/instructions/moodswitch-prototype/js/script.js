@@ -8,7 +8,7 @@
 
 "use strict";
 
-const moodSwitch = {
+let moodSwitch = {
     on: false
 };
 
@@ -17,8 +17,8 @@ let sad = {
     red: 0,
     green: 0,
     blue: 255,
-    x: 250,
-    y: 300,
+    x: 500,
+    y: 500,
     w: 400,
     h: 300,
 };
@@ -38,6 +38,7 @@ let happy = {
 */
 function setup() {
     createCanvas(1000, 1000);
+
 }
 
 /**
@@ -53,11 +54,16 @@ function draw() {
 }
 
 function checkIfHappy() {
+
     if (mouseIsPressed) {
         moodSwitch.on = true;
     }
     else {
         moodSwitch.on = false;
+        erase();
+        drawHappySquare();
+        noErase();
+        background(0);
     }
 }
 
@@ -89,6 +95,6 @@ function drawHappySquare() {
     push();
     fill(happy.red, happy.green, happy.blue);
     noStroke();
-    rect(happy.x, happy.y, happy.w, happy.h);
+    rect(happy.x, happy.y, happy.s);
     pop();
 }

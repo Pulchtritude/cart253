@@ -24,6 +24,8 @@ let capital = {
     r: 255,
     g: 255,
     b: 255,
+    speed: 0.01,
+    sped: 0.001,
 
     // Defines position of capital
     position: {
@@ -101,15 +103,15 @@ function draw() {
     pop();
 
     // Controls the "cancelation's" slow and progressive emergence as a kind of dark malevolence (capital)
-    capital.r -= 0.001
-    capital.g -= 0.001
-    capital.b -= 0.001
+    capital.r -= capital.sped;
+    capital.g -= capital.sped;
+    capital.b -= capital.sped;
 
     // Controls the "cancelation's" movement and size as it envelops the future that is your screen (capital)
-    capital.position.x += 0.01
-    capital.position.y -= 0.01
-    capital.size.w += 0.01
-    capital.size.h += 0.01
+    capital.position.x += capital.speed;
+    capital.position.y -= capital.speed;
+    capital.size.w += capital.speed;
+    capital.size.h += capital.speed;
 
     // Constrains the "cancelation's" position
     capital.position.x = constrain(capital.position.x, capital.minPosition.x, capital.maxPosition.x);
