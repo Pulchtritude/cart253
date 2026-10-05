@@ -8,6 +8,9 @@
 
 "use strict";
 
+let swing = {
+    on: false
+};
 
 let scytheOne;
 let scytheTwo;
@@ -24,11 +27,24 @@ async function setup() {
 
     background(255);
 
-    imageMode(CENTER);
+    checkIfSwung();
 
-    image(scytheOne, 500, 500);
+
 
 }
+
+function checkIfSwung() {
+    if (mouseIsPressed) {
+        swing.on = true;
+    }
+    // If mouse is unpressed, that means that the user isn't currently swinging
+    else {
+        swing.on = false;
+        imageMode(CENTER);
+        image(scytheOne, 500, 500);
+    }
+}
+
 
 /**
  * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
