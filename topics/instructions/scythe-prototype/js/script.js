@@ -18,11 +18,15 @@ let scytheTwo;
 async function setup() {
     // Load the image.
     scytheOne = await loadImage('assets/images/scytheOne.png');
-    scytheTwo = await loadImage('/assets/images/scytheTwo.png');
+    scytheTwo = await loadImage('assets/images/scytheTwo.png');
 
     createCanvas(1000, 1000);
 
     background(255);
+
+    imageMode(CENTER);
+
+    image(scytheOne, 500, 500);
 
 }
 
@@ -30,5 +34,6 @@ async function setup() {
  * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
 */
 function draw() {
+
 
 }
