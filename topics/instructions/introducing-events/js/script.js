@@ -1,24 +1,33 @@
 /**
- * Title of Project
- * Author Name
+ * Introducing events
+ * John Hanna
  * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * Taking a look at how events work in P5 Js
+ * 
  */
 
 "use strict";
 
 /**
- * OH LOOK I DIDN'T DESCRIBE SETUP!!
+ * Creates a black canvas
 */
 function setup() {
-
+    createCanvas(400, 400);
+    background(0);
 }
 
 
 /**
- * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
+ * Draws a circle at mouse press
 */
 function draw() {
 
+}
+
+function mousePressed(fxn) {
+    push();
+    noStroke();
+    fill(255, 255, 0);
+    (ellipse, mouseX, mouseY, 50)
+    pop();
 }
