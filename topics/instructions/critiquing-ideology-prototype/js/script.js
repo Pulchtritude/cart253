@@ -1,5 +1,5 @@
 /**
- * Title of Project
+ * Critiquing Ideology
  * Author Name
  * 
  * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
@@ -12,7 +12,7 @@
  * OH LOOK I DIDN'T DESCRIBE SETUP!!
 */
 function setup() {
-
+    createCanvas(1000, 1000);
 }
 
 
