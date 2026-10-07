@@ -1,9 +1,8 @@
 /**
- * Title of Project
- * Author Name
+ * Scythe
+ * John Hanna
  * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * Draws a Scythe and simulates stabbing animation in video games
  */
 
 "use strict";
@@ -41,7 +40,9 @@ async function setup() {
 
 
 }
-
+/**
+ * Draws the scene
+*/
 function draw() {
     background(255);
 
@@ -62,6 +63,4 @@ function draw() {
 
 
 
-/**
- * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
-*/
+
