@@ -13,21 +13,23 @@
 */
 let dollar;
 let god;
-let ambient;
+let sound;
 let am = {
     move: 500,
 };
+
+
 
 async function setup() {
     // Load the image.
     dollar = await loadImage('assets/images/dollar.png');
     god = await loadImage('assets/images/god.png');
 
-    ambient = createAudio('assets/sounds/ambient.wav');
+
 
     createCanvas(1000, 1000);
 
-
+    sound = createAudio('assets/sounds/ambient.wav');
 }
 
 
@@ -43,16 +45,13 @@ function draw() {
 }
 
 function mouseWheel(event) {
+
+    sound.play();
     if (event.delta > 0) {
         am.move += 5;
-        ambient.play();
+
     }
     else {
         am.move -= 5;
-        ambient.play();
     }
-    if (event.delta === 0) {
-        ambient.stop();
-    }
-
 }

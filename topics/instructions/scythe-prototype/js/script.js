@@ -10,24 +10,18 @@
 
 
 let scytheOne;
+
 let arm = {
     x: 1620,
     y: 0,
     w: 300,
     h: 1200,
-    fill: "#ffdcb1",
-}
-let target = {
-    x: 1620,
-    y: 0,
-    w: 300,
-    h: 1200,
-    fill: "#ffdcb1",
+    flesh: "#ffdcb1",
     fills: {
-        noOverlap: "#ffdcb1",
-        overlap: "#ff0000"
+        safe: "#ffdcb1",
+        hurt: "#ff0000"
     }
-}
+};
 
 
 async function setup() {
@@ -38,7 +32,6 @@ async function setup() {
 
     noCursor();
 
-
 }
 /**
  * Draws the scene
@@ -46,14 +39,28 @@ async function setup() {
 function draw() {
     background(255);
 
-    push();
-    noStroke();
-    fill(arm.fill);
-    rect(arm.x, arm.y, arm.w, arm.h);
-    pop();
+    drawArm();
 
     image(scytheOne, mouseX, mouseY);
 
+}
+
+function drawArm() {
+
+    const distance = dist(mouseX, mouseY, arm.x, arm.y);
+    const mouseIsOverlapping = (distance < arm.w * 1.75) && (distance < arm.h * 1.75);
+    if (mouseIsOverlapping) {
+        arm.flesh = arm.fills.hurt;
+
+    }
+    else {
+        arm.flesh = arm.fills.safe;
+    }
+    push();
+    noStroke();
+    fill(arm.flesh);
+    rect(arm.x, arm.y, arm.w, arm.h);
+    pop();
 }
 
 
