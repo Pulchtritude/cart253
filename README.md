@@ -40,6 +40,21 @@ This website serves as a working archive of all the prototypes I have created in
 - [Code](https://github.com/Pulchtritude/cart253/blob/main/topics/instructions/moodswitch-prototype/js/script.js)
 > ![Switch](./images/switch.png)
 
+### Masks - Prototyping: Conditionals
+- [View Online](https://pulchtritude.github.io/cart253/topics/instructions/masks-prototype/index.html)
+- [Code](https://github.com/Pulchtritude/cart253/blob/main/topics/instructions/masks-prototype/js/script.js)
+> ![Mask](./images/masks.png)
+
+### Critiquing Ideology - Prototyping: Conditionals
+- [View Online](https://pulchtritude.github.io/cart253/topics/instructions/critiquing-ideology-prototype/index.html)
+- [Code](https://github.com/Pulchtritude/cart253/blob/main/topics/instructions/critiquing-ideology-prototype/js/script.js)
+> ![God](./images/ideology.png)
+
+### Scythe - Prototyping: Conditionals
+- [View Online](https://pulchtritude.github.io/cart253/topics/instructions/masks-prototype/index.html)
+- [Code](https://github.com/Pulchtritude/cart253/blob/main/topics/instructions/masks-prototype/js/script.js)
+> ![Scythe](./images/scythe.png)
+
 ## Challenges
 
 ### Landscape
