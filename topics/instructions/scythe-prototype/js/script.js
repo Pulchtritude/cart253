@@ -2,7 +2,7 @@
  * Scythe
  * John Hanna
  * 
- * Draws a Scythe and simulates stabbing reaction in video games
+ * Draws a Scythe and simulates stabbing "animation" in video games
  */
 
 "use strict";
