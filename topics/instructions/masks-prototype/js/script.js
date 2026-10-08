@@ -26,7 +26,7 @@ let face = {
         happy: "#fff700",
         angry: "#ff0000",
         sad: "#0000ff",
-        euphoria: "#bc2890",
+        tww: "#bc2890",
     },
 }
 
@@ -89,7 +89,7 @@ function keyPressed(event) {
     // By pressing "w", face becomes "woven" in euphoria
     // Stops "The Woven Web" if it's currently playing
     else if (event.key === "w") {
-        face.neutral = face.affect.euphoria;
+        face.neutral = face.affect.tww;
         web.play();
     }
 }
