@@ -15,7 +15,10 @@ let dollar;
 let god;
 let sound;
 let am = {
+    x: 500,
+    y: 500,
     move: 500,
+    speed: 7,
 };
 
 
@@ -40,18 +43,18 @@ async function setup() {
 function draw() {
     background(255);
     imageMode(CENTER);
-    image(god, 500, 500);
-    image(dollar, 500, am.move);
+    image(god, am.x, am.y);
+    image(dollar, am.x, am.move);
 }
 
 function mouseWheel(event) {
 
     sound.play();
     if (event.delta > 0) {
-        am.move += 5;
+        am.move += am.speed;
 
     }
     else {
-        am.move -= 5;
+        am.move -= am.speed;
     }
 }

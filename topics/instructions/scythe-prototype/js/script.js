@@ -2,7 +2,7 @@
  * Scythe
  * John Hanna
  * 
- * Draws a Scythe and simulates stabbing animation in video games
+ * Draws a Scythe and simulates stabbing reaction in video games
  */
 
 "use strict";
@@ -46,7 +46,8 @@ function draw() {
 }
 
 function drawArm() {
-
+    // This method calculates distance, but it only functions half well, 
+    // probably because I've only used this with ellipses and not rects
     const distance = dist(mouseX, mouseY, arm.x, arm.y);
     const mouseIsOverlapping = (distance < arm.w * 1.75) && (distance < arm.h * 1.75);
     if (mouseIsOverlapping) {
