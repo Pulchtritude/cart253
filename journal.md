@@ -40,8 +40,6 @@ My next prototype only used image files, both made in Corel Vector: a modified d
 
 My last prototype uses key presses in order to demonstrate different affects. The basic ones are more surface level reactions ("s" for sad, "a" for angry, and "H" for sad) than they are affects, with the most interesting one being happy because in order to activate it, you have to write a capital H. This indicates that it takes more "effort" to be happy than it does it does to be sad or angry. Each key press changes the color of the face object corresponding to the affect. That said, where my affect concept stands out is with my ("w" for The Woven Web or "tww" as defined in the code). The idea is to demonstrate that songs are themselves affects. Affects are themselves cohesive feelings that feel abstract, but we can ultimately name. When the user presses "w" on the keyboard, the face "feels" like "The Woven Web". All this said, while I attributed "tww" to a color, I wanted to use an image in order to better illustrate the specificity of the affect. Though, I was unable to implement this because I don't know how to run audio and image files in the same project. I had to compromise and I opted to priotize the audio. Moreover, I wanted to layer a smiley face expression PNG over the face object (ellipse) in order to demonstrate the core concept of masks that I was going for, but because of this issue, I couldn't do so. In any case, the concept was to illustrate that society demands that we put a smile on our face no matter how we're feeling. In effect, that is our mask, and it is such whether we feel happy, sad, angry, or "The Woven Web" 
 
-### Update
-
 
 
 
