@@ -1,6 +1,6 @@
 /**
  * Masks
- * Author Name
+ * John Hanna
  * 
  * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
  * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
@@ -9,13 +9,12 @@
 "use strict";
 
 let face = {
-    // Position
+    // positions and size
     x: 500,
     y: 500,
-    // Size
     size: 500,
     // neutral expression
-    neutral: "#515169",
+    neutral: "#040405",
     // "affects"; more like general surface level expressions, but just humor me please
     affect: {
         happy: "#fff700",
@@ -28,14 +27,14 @@ let face = {
 let web;
 let mask;
 /**
- * OH LOOK I DIDN'T DESCRIBE SETUP!!
+ * creates canvas, loads audio and image
 */
 function setup() {
     createCanvas(1000, 1000);
     web = createAudio('assets/sounds/web.mp3');
     mask = loadImage('assets/images/smile.png')
 
-    //not sure how to load music and images in the same project :(
+    // not sure how to load music and images in the same project :(
 
 
 }
@@ -44,7 +43,7 @@ function setup() {
 
 
 /**
- * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
+ * Draws the scene
 */
 function draw() {
 
@@ -61,6 +60,7 @@ function keyPressed(event) {
         face.neutral = face.affect.sad;
         web.stop();
     }
+    // this is a capital h to emphasize effort
     else if (event.key === "H") {
         face.neutral = face.affect.happy;
         web.stop();
