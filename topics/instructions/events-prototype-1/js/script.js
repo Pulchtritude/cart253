@@ -8,6 +8,10 @@
 
 "use strict";
 let sunset = {
+    // Position and size of the sunset
+    x: 0,
+    y: 0,
+    size: 1000,
     fill: "#87CEEB",
     // These fills are the states that the program interpolates in the order shown. 
     fills: {
@@ -35,8 +39,8 @@ function drawSunset() {
 
     rectMode(Center);
 
-    push(); x
+    push();
     noStroke();
-    rect(1000, 1000, 1000)
+    rect(sunset.x, sunset.y, sunset.size)
     pop();
 }
