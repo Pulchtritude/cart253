@@ -1,19 +1,21 @@
 /**
- * Title of Project
- * Author Name
+ * Fading Pink Sunset
+ * John Hanna
  * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * The opertune moment that is the peak of a pink sunset is quickly slipping away from your grasp. 
+ * Press "g" to grip it, saving it from being lost to time, or let it go. Is it perhaps better to let it go...
  */
 
 "use strict";
+
+let song;
 let sun = {
     // Position and size of the sunset
     x: 500,
     y: 500,
     size: 700,
     map: 0,
-    speed: 1,
+    speed: 0.5,
     pull: 255,
     r: 255,
     g: 0,
@@ -29,6 +31,7 @@ let sun = {
 */
 function setup() {
     createCanvas(1000, 1000);
+    song = createAudio('assets/sounds/now.mp3');
 }
 
 
@@ -59,7 +62,7 @@ function drawSunset() {
     sun.pull -= sun.speed;
 
     if (sun.pull === 0) {
-
+        song.stop();
     }
 
 }
@@ -70,8 +73,7 @@ function keyPressed(event) {
     // Stops "The Woven Web" if it's currently playing
     if (event.key === "s") {
         sun.pull = 255;
+        song.play();
     }
-
-
 }
 
