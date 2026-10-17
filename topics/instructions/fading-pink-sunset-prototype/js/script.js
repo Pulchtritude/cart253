@@ -14,13 +14,14 @@ let sun = {
     x: 500,
     y: 500,
     size: 700,
-    map: 0,
+    // Speed at which "sun.r" decreases every frame
     speed: 0.5,
+    // Pull is the "real" value of sun.r
     pull: 255,
+    // Fill
     r: 255,
     g: 0,
     b: 255,
-    // These fills are the states that the program interpolates in the order shown. 
 
 }
 
@@ -71,7 +72,7 @@ function drawSunset() {
 function keyPressed(event) {
     // By pressing "a", face becomes red with anger
     // Stops "The Woven Web" if it's currently playing
-    if (event.key === "s") {
+    if (event.key === "g") {
         sun.pull = 255;
         song.play();
     }
