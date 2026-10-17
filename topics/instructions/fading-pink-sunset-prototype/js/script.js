@@ -13,7 +13,7 @@ let sun = {
     y: 500,
     size: 700,
     map: 0,
-    speed: .1,
+    speed: 1,
     pull: 255,
     r: 255,
     g: 0,
