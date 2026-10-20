@@ -3,7 +3,9 @@
  * John Hanna
  * 
  * The opertune moment that is the peak of a pink sunset is quickly slipping away from your grasp. 
- * Press "g" to grip it, saving it from being lost to time, or let it go. Is it perhaps better to let it go...
+ * Press "p" to pull it back, saving it from being lost to time, or let it go. 
+ * Is it perhaps better to let it go...
+ * 
  */
 
 "use strict";
@@ -28,16 +30,13 @@ let sunset = {
     b: 255,
 }
 
-
-
 /**
  * Creates the canvas and loads the audio
 */
 function setup() {
     createCanvas(1000, 1000);
-    song = createAudio('assets/sounds/now.mp3');
+    song = createAudio('assets/sounds/pman.mp3');
 }
-
 
 /**
  * Draws the scene
@@ -52,11 +51,10 @@ function draw() {
  * Defines a function that details the specifications
  * used to draw a sunsetset onto the canvas.
  * It uses sunset variable information
- * 
  */
 function drawSunset() {
 
-
+    // Draws sunset
     rectMode(CENTER)
 
     push();
@@ -71,7 +69,10 @@ function drawSunset() {
     sunset.r = map(0, 0, width, sunset.pull, 0);
     sunset.b = map(0, 0, width, 150, 255);
 
-    //
+    // Determinates the rate at which the sunset.pull value decreases,
+    // thereby determining the rate at which the program will progress from
+    // the visual start of the present drawing the end point of the present
+    // The present is always falling away from us, as it were. 
     sunset.pull -= sunset.speed;
 
     if (sunset.pull === 0) {
@@ -81,12 +82,16 @@ function drawSunset() {
 
 }
 
-
+/**
+ * Defines a function that details the specifications
+ * regarding a keypress interaction event. 
+ * The substance of the program lies in this simple interaction pulling the past back
+ */
 function keyPressed(event) {
     // By pressing "g", you grab onto 
     // the present, the opertune moment
     // that will innevitably slip away
-    if (event.key === "g") {
+    if (event.key === "p") {
         sun.pull = 255;
         song.play();
     }
