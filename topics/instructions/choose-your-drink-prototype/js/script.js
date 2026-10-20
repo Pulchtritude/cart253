@@ -9,7 +9,8 @@
 
 let beer;
 let water;
-let energy;
+let question;
+let tool;
 
 /**
  * Creates Canvas and loads all the image files needed
@@ -21,7 +22,6 @@ async function setup() {
     water = await loadImage('assets/images/water2.png');
     question = await loadImage('assets/images/water2.png');
     tool = await loadImage('assets/images/water2.png');
-    energy = await loadImage('assets/images/water2.png');
 }
 
 
@@ -33,22 +33,25 @@ function draw() {
 }
 
 function keyPressed(event) {
-
+    // If player presses "w", the program clears the previous image (if it's rendered on screen),
+    // and "draws" a wooden bowl of water alongside a verse of Homer
     if (event.key === "w") {
 
         background(255);
         imageMode(CENTER);
         image(water, 500, 500);
-
     }
 
+    // If player presses "b", the program clears the previous image (if it's rendered on screen),
+    // and "draws" a beer alongside a poem by Baudelaire
     else if (event.key === "b") {
 
         background(255);
         imageMode(CENTER);
         image(beer, 500, 500);
     }
-
+    // If player presses "q", the program clears the previous image (if it's rendered on screen),
+    // and "draws" the question screen
     else if (event.key === "q") {
 
         background(255);
@@ -58,6 +61,8 @@ function keyPressed(event) {
 }
 
 function mousePressed() {
+    // If player presses "mouse", the program clears the previous image (if it's rendered on screen),
+    // and "draws" shroom tea alongside Tool lyrics
     background(255);
     imageMode(CENTER);
     image(tool, 500, 500);
