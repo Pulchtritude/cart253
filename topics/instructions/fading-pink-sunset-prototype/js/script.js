@@ -10,11 +10,19 @@
 
 "use strict";
 
-// Defines a variable called song which is used to load and call 
-// the audio file that plays when the player attempts to pull 
-// the past back into the present
+
+
+/**
+ * Defines a variable called song which is used to load and call 
+ * the audio file that plays when the player attempts to pull
+ * the past back into the present
+*/
 let song;
 
+/**
+ * Defines a variable called sunset which sets the specifications for 
+ * the drawSunset function
+*/
 let sunset = {
     // Position and size of the sunsetset
     x: 500,
@@ -75,6 +83,9 @@ function drawSunset() {
     // The present is always falling away from us, as it were. 
     sunset.pull -= sunset.speed;
 
+    // if the present manages to fully slip away, 
+    // the auditory spell will cease, and you will be
+    // greeted by your own internal void.
     if (sunset.pull === 0) {
         song.stop();
         background(0);
