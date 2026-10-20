@@ -13,7 +13,8 @@
 
 let pew;
 let walk;
-
+let reload;
+let grenade;
 
 /**
  * Creates canvas and loads audio
@@ -22,7 +23,8 @@ function setup() {
     createCanvas(1000, 1000);
     pew = createAudio('assets/sounds/pew2.wav');
     walk = createAudio('assets/sounds/walk2.wav');
-
+    reload = createAudio('assets/sounds/reload.mp3');
+    grenade = createAudio('assets/sounds/grenade.mp3');
 }
 
 
@@ -34,44 +36,31 @@ function draw() {
     if (mouseIsPressed === true) {
         pew.play();
     }
-
+    if (keyIsPressed === true) {
+        if (keyCode === 87) {
+            walk.play();
+        }
+        else if (keyCode === 65) {
+            walk.play();
+        }
+        else if (keyCode === 83) {
+            walk.play();
+        }
+        else if (keyCode === 68) {
+            walk.play();
+        }
+    }
 
 }
 
-function keyIsPressed(event) {
+function keyPressed(event) {
 
-    if (event.key === "w") {
-
-        walk.play();
+    if (event.key === "r") {
+        reload.play();
     }
 
-    else if (!keyIsPressed) {
-
-        walk.stop();
+    else if (event.key === "g") {
+        grenade.play();
     }
 
-    else if (event.key === "a") {
-
-        walk.play();
-    }
-
-    else if (event.key === "s") {
-
-        walk.play();
-
-    }
-
-    else if (event.key === "d") {
-
-        walk.play();
-    }
 }
-
-//function mousePressed(event) {
-// if (event.mousePressed) {
-////     pew.play();
-// }
-// else {
-//pew.stop();
-//}
-//}
