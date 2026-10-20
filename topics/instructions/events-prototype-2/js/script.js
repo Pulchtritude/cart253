@@ -8,11 +8,18 @@
 
 "use strict";
 
+let beer;
+let water;
+let energy;
+
 /**
  * OH LOOK I DIDN'T DESCRIBE SETUP!!
 */
-function setup() {
-
+async function setup() {
+    createCanvas(1000, 1000);
+    // Load the image.
+    beer = await loadImage('assets/images/beer.png');
+    water = await loadImage('assets/images/water2.png');
 }
 
 
@@ -21,4 +28,25 @@ function setup() {
 */
 function draw() {
 
+}
+
+function keyPressed(event) {
+
+
+
+    if (event.key === "w") {
+
+        background(255);
+        imageMode(CENTER);
+
+        image(beer, 500, 500);
+
+    }
+
+    else if (event.key === "b") {
+
+        background(255);
+        imageMode(CENTER);
+        image(water, 500, 500);
+    }
 }
