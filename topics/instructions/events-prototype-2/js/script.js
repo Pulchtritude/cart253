@@ -12,7 +12,7 @@ let water;
 let energy;
 
 /**
- * OH LOOK I DIDN'T DESCRIBE SETUP!!
+ * Creates Canvas and loads all the image files needed
 */
 async function setup() {
     createCanvas(1000, 1000);
@@ -26,15 +26,13 @@ async function setup() {
 
 
 /**
- * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
+ * This is currently drawing nothing
 */
 function draw() {
 
 }
 
 function keyPressed(event) {
-
-
 
     if (event.key === "w") {
 

@@ -2,7 +2,11 @@
  * Imagine FPS
  * John Hanna
  * 
- * When you engage with a certain control framework, with certain auditory cues, what game do you think of first and why?
+ * When you engage with a certain control framework, 
+ * with certain auditory cues, 
+ * what game do you think of first and why?
+ * An oddly good conversation starter :)
+ * 
  */
 
 "use strict";
@@ -30,6 +34,7 @@ function draw() {
     if (mouseIsPressed === true) {
         pew.play();
     }
+
 
 }
 

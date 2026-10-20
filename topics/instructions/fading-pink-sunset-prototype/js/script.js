@@ -8,27 +8,30 @@
 
 "use strict";
 
+// Defines a variable called song which is used to load and call 
+// the audio file that plays when the player attempts to pull 
+// the past back into the present
 let song;
-let sun = {
-    // Position and size of the sunset
+
+let sunset = {
+    // Position and size of the sunsetset
     x: 500,
     y: 500,
     size: 700,
-    // Speed at which "sun.r" decreases every frame
+    // Speed at which "sunset.r" decreases every frame
     speed: 0.5,
-    // Pull is the "real" value of sun.r
+    // Pull is the "real" value of sunset.r
     pull: 255,
     // Fill
     r: 255,
     g: 0,
     b: 255,
-
 }
 
 
 
 /**
- * OH LOOK I DIDN'T DESCRIBE SETUP!!
+ * Creates the canvas and loads the audio
 */
 function setup() {
     createCanvas(1000, 1000);
@@ -37,7 +40,7 @@ function setup() {
 
 
 /**
- * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
+ * Draws the scene
 */
 function draw() {
 
@@ -45,33 +48,44 @@ function draw() {
 
 }
 
+/**
+ * Defines a function that details the specifications
+ * used to draw a sunsetset onto the canvas.
+ * It uses sunset variable information
+ * 
+ */
 function drawSunset() {
 
 
     rectMode(CENTER)
 
     push();
-    fill(sun.r, sun.g, sun.b);
+    fill(sunset.r, sunset.g, sunset.b);
     noStroke();
-    rect(sun.x, sun.y, sun.size);
+    rect(sunset.x, sunset.y, sunset.size);
     pop();
 
-    sun.r = map(0, 0, width, sun.pull, 0);
+    // Maps the sunset.r and sunset.b values 
+    // to set in stone a visual start and 
+    // end point
+    sunset.r = map(0, 0, width, sunset.pull, 0);
+    sunset.b = map(0, 0, width, 150, 255);
 
-    sun.b = map(0, 0, width, 150, 255);
+    //
+    sunset.pull -= sunset.speed;
 
-    sun.pull -= sun.speed;
-
-    if (sun.pull === 0) {
+    if (sunset.pull === 0) {
         song.stop();
+        background(0);
     }
 
 }
 
 
 function keyPressed(event) {
-    // By pressing "a", face becomes red with anger
-    // Stops "The Woven Web" if it's currently playing
+    // By pressing "g", you grab onto 
+    // the present, the opertune moment
+    // that will innevitably slip away
     if (event.key === "g") {
         sun.pull = 255;
         song.play();
