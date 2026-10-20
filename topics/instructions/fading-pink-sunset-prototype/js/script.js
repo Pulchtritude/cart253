@@ -86,9 +86,7 @@ function drawSunset() {
     // greeted by your own internal void.
     if (sunset.pull === 0) {
         song.stop();
-        background(0);
     }
-
 }
 
 /**

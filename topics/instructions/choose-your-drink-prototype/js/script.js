@@ -28,9 +28,7 @@ async function setup() {
     water = await loadImage('assets/images/wa.png');
     question = await loadImage('assets/images/question.png');
     tool = await loadImage('assets/images/tea.png');
-
 }
-
 
 /**
  * This is drawing nothing

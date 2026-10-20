@@ -55,6 +55,21 @@ This website serves as a working archive of all the prototypes I have created in
 - [Code](https://github.com/Pulchtritude/cart253/blob/main/topics/instructions/masks-prototype/js/script.js)
 > ![Scythe](./images/scythe.png)
 
+### Choose Your Drink! - Prototyping: Events
+- [View Online](https://pulchtritude.github.io/cart253/topics/instructions/choose-your-drink-prototype/index.html)
+- [Code](https://github.com/Pulchtritude/cart253/blob/main/topics/instructions/choose-your-drink-prototype/js/script.js)
+> ![Drink](./images/drink.png)
+
+### Imagine FPS - Prototyping: Events
+- [View Online](https://pulchtritude.github.io/cart253/topics/instructions/imagine-fps-prototype/index.html)
+- [Code](https://github.com/Pulchtritude/cart253/blob/main/topics/instructions/imagine-fps-prototype/js/script.js)
+> ![FPS](./images/fps.png)
+
+### Fading Pink Sunset - Prototyping: Events
+- [View Online](https://pulchtritude.github.io/cart253/topics/instructions/fading-pink-sunset-prototype/index.html)
+- [Code](https://github.com/Pulchtritude/cart253/blob/main/topics/instructions/fading-pink-sunset-prototype/js/script.js)
+> ![sunset](./images/sunset.png)
+
 ## Challenges
 
 ### Landscape
