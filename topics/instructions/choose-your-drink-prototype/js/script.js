@@ -7,6 +7,12 @@
 
 "use strict";
 
+/**
+ * Defines various variables (with apt names)
+ * which are simply used to call their assigned image files
+ * These image files are the crux of the prototype
+ * loaded in async setup and called in event functions
+*/
 let beer;
 let water;
 let question;
@@ -27,7 +33,7 @@ async function setup() {
 
 
 /**
- * This is currently drawing nothing
+ * This is drawing nothing
 */
 function draw() {
 

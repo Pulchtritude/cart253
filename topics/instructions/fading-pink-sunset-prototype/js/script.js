@@ -10,8 +10,6 @@
 
 "use strict";
 
-
-
 /**
  * Defines a variable called song which is used to load and call 
  * the audio file that plays when the player attempts to pull

@@ -2,7 +2,7 @@
  * Imagine FPS
  * John Hanna
  * 
- * When you engage with a certain control framework, 
+ * When you engage with a certain control framework (that of the FPS), 
  * with certain auditory cues, 
  * what game do you think of first and why?
  * An oddly good conversation starter :)
@@ -16,6 +16,7 @@
  * Defines various variables (with apt names)
  * which are simply used to call their assigned audio files
  * loaded in setup and called in both draw and event functions
+ * These audio files are the crux of the prototype
 */
 let pew;
 let walk;
@@ -88,5 +89,4 @@ function keyPressed(event) {
     else if (event.key === "g") {
         grenade.play();
     }
-
 }
