@@ -1,9 +1,8 @@
 /**
- * Title of Project
- * Author Name
+ * Choose Your Drink
+ * John Hanna
  * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * What kind of Poet will you be after picking your drink?
  */
 
 "use strict";
@@ -20,6 +19,9 @@ async function setup() {
     // Load the image.
     beer = await loadImage('assets/images/beer.png');
     water = await loadImage('assets/images/water2.png');
+    question = await loadImage('assets/images/water2.png');
+    tool = await loadImage('assets/images/water2.png');
+    energy = await loadImage('assets/images/water2.png');
 }
 
 
@@ -38,8 +40,7 @@ function keyPressed(event) {
 
         background(255);
         imageMode(CENTER);
-
-        image(beer, 500, 500);
+        image(water, 500, 500);
 
     }
 
@@ -47,6 +48,19 @@ function keyPressed(event) {
 
         background(255);
         imageMode(CENTER);
-        image(water, 500, 500);
+        image(beer, 500, 500);
     }
+
+    else if (event.key === "q") {
+
+        background(255);
+        imageMode(CENTER);
+        image(question, 500, 500);
+    }
+}
+
+function mousePressed() {
+    background(255);
+    imageMode(CENTER);
+    image(tool, 500, 500);
 }
