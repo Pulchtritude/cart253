@@ -18,10 +18,11 @@ let tool;
 async function setup() {
     createCanvas(1000, 1000);
     // Load the image.
-    beer = await loadImage('assets/images/beer.png');
-    water = await loadImage('assets/images/water2.png');
-    question = await loadImage('assets/images/water2.png');
-    tool = await loadImage('assets/images/water2.png');
+    beer = await loadImage('assets/images/be.png');
+    water = await loadImage('assets/images/wa.png');
+    question = await loadImage('assets/images/question.png');
+    tool = await loadImage('assets/images/tea.png');
+
 }
 
 
