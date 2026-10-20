@@ -7,17 +7,23 @@
  * what game do you think of first and why?
  * An oddly good conversation starter :)
  * 
+ * Sound effects are sourced from FreeSound.org
  */
 
 "use strict";
 
+/**
+ * Defines various variables (with apt names)
+ * which are simply used to call their assigned audio files
+ * loaded in setup and called in both draw and event functions
+*/
 let pew;
 let walk;
 let reload;
 let grenade;
 
 /**
- * Creates canvas and loads audio
+ * Creates canvas and loads all neccessary audio files
 */
 function setup() {
     createCanvas(1000, 1000);
@@ -27,38 +33,58 @@ function setup() {
     grenade = createAudio('assets/sounds/grenade.mp3');
 }
 
-
 /**
- * Draws the scene. Albiet, it's not actually drawing anything visual at the moment
+ * Draws the scene. Albiet, it's not actually drawing anything visual.
+ * These conditionals are being called over and over again so that 
+ * the interaction here is seamless.
 */
 function draw() {
-
+    // if mouse is pressed, you shoot imaginary gun:
+    // indicated by the "toy" gun shot sound effect
     if (mouseIsPressed === true) {
         pew.play();
     }
+    // If each of the selected keys 
+    // (differentied by keycodes) are pressed,
+    // you perform and imaginary walk:
+    // indicated by walk sound effect
     if (keyIsPressed === true) {
+        // "w"
         if (keyCode === 87) {
             walk.play();
         }
+        // "a"
         else if (keyCode === 65) {
             walk.play();
         }
+        // "s"
         else if (keyCode === 83) {
             walk.play();
         }
+        // "d"
         else if (keyCode === 68) {
             walk.play();
         }
     }
-
 }
 
+/**
+ * Defines a function that uses events to call
+ * specific "actions" through key presses
+ * that are not meant to be called in draw
+ * over and over again.
+*/
 function keyPressed(event) {
-
+    // if "r" is pressed, an uninteruptable 
+    // reload sound effect plays
+    // In shooter games, you can sometimes interupt reloads, 
+    // but this won't be the case here
     if (event.key === "r") {
         reload.play();
     }
-
+    // if "g" is pressed, and uninteruptable
+    // grenade sound effect plays
+    // In shooter games, there is no undoing a grenade throw
     else if (event.key === "g") {
         grenade.play();
     }
