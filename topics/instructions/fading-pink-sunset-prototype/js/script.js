@@ -37,7 +37,7 @@ let sunset = {
 }
 
 /**
- * Creates the canvas and loads the audio
+ * Creates the canvas and loads audio file
 */
 function setup() {
     createCanvas(1000, 1000);
@@ -48,21 +48,18 @@ function setup() {
  * Draws the scene
 */
 function draw() {
-
     drawSunset();
-
 }
 
 /**
  * Defines a function that details the specifications
- * used to draw a sunsetset onto the canvas.
+ * used to draw a sunset onto the canvas.
  * It uses sunset variable information
  */
 function drawSunset() {
-
-    // Draws sunset
     rectMode(CENTER)
 
+    // Draws sunset
     push();
     fill(sunset.r, sunset.g, sunset.b);
     noStroke();
@@ -95,9 +92,10 @@ function drawSunset() {
  * The substance of the program lies in this simple interaction pulling the past back
  */
 function keyPressed(event) {
-    // By pressing "g", you grab onto 
-    // the present, the opertune moment
-    // that will innevitably slip away
+    // By pressing "p", you pull 
+    // the past back into the present, 
+    // the opertune moment that will innevitably...
+    // slip away
     if (event.key === "p") {
         sun.pull = 255;
         song.play();

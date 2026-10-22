@@ -25,6 +25,8 @@ let grenade;
 
 /**
  * Creates canvas and loads all neccessary audio files
+ * Some will called in draw
+ * And others will be called in events
 */
 function setup() {
     createCanvas(1000, 1000);
@@ -40,15 +42,13 @@ function setup() {
  * the interaction here is seamless.
 */
 function draw() {
-    // if mouse is pressed, you shoot imaginary gun:
-    // indicated by the "toy" gun shot sound effect
+    // if mouse is pressed, you shoot imaginary gun: indicated by the "toy" gun shot 
+    // sound effect called in setup
     if (mouseIsPressed === true) {
         pew.play();
     }
-    // If each of the selected keys 
-    // (differentied by keycodes) are pressed,
-    // you perform and imaginary walk:
-    // indicated by walk sound effect
+    // If each of the selected keys (differentied by keycodes) are pressed,
+    // you perform an imaginary walk: indicated by walk sound effect called in setup
     if (keyIsPressed === true) {
         // "w"
         if (keyCode === 87) {
@@ -70,21 +70,17 @@ function draw() {
 }
 
 /**
- * Defines a function that uses events to call
- * specific "actions" through key presses
- * that are not meant to be called in draw
- * over and over again.
+ * Defines a function that uses events to call specific "actions" through key presses
+ * that are not meant to be called in draw over and over again.
 */
 function keyPressed(event) {
-    // if "r" is pressed, an uninteruptable 
-    // reload sound effect plays
+    // if "r" is pressed, an uninteruptable reload sound effect plays
     // In shooter games, you can sometimes interupt reloads, 
     // but this won't be the case here
     if (event.key === "r") {
         reload.play();
     }
-    // if "g" is pressed, and uninteruptable
-    // grenade sound effect plays
+    // if "g" is pressed, and uninteruptable grenade sound effect plays
     // In shooter games, there is no undoing a grenade throw
     else if (event.key === "g") {
         grenade.play();
