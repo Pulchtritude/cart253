@@ -26,7 +26,18 @@ const ball = {
     height: 10,
     velocity: {
         x: 0,
-        y: 10
+        y: 5
+    }
+};
+
+const jeffreyTheBall = {
+    x: 200,
+    y: 20,
+    width: 10,
+    height: 10,
+    velocity: {
+        x: 0,
+        y: 2
     }
 };
 
@@ -52,26 +63,32 @@ function setup() {
 function draw() {
     background("#87ceeb");
 
+    checkOverlap(ball, paddle);
     movePaddle(paddle);
     moveBall(ball);
+    moveBall(jeffreyTheBall)
 
     handleBounce(ball, paddle);
+    handleBounce(jeffreyTheBall, paddle);
 
     drawPaddle(paddle);
     drawBall(ball);
+    drawBall(jeffreyTheBall);
 }
 
 /**
  * Moves the paddle
  */
 function movePaddle(paddle) {
-
+    paddle.x = mouseX;
 }
 
 /**
  * Moves the ball passed in as a parameter
  */
 function moveBall(ball) {
+    ball.x += ball.velocity.x;
+    ball.y += ball.velocity.y;
 
 }
 
@@ -79,6 +96,10 @@ function moveBall(ball) {
  * Bounces the provided ball off the provided paddle
  */
 function handleBounce(ball, paddle) {
+    if (checkOverlap(ball, paddle)) {
+        ball.velocity.y *= -1;
+    }
+
 
 }
 
