@@ -97,7 +97,7 @@ function keyPressed(event) {
     // the opertune moment that will innevitably...
     // slip away
     if (event.key === "p") {
-        sun.pull = 255;
+        sunset.pull = 255;
         song.play();
     }
 }

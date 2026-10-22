@@ -1,21 +1,10 @@
-/**
- * Title of Project
- * Author Name
+/** /
+ * Jeffrey Ball Bonanza
+ * John Hanna and Matteo Edmonds-Tiano
  * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
- */
-
-"use strict";
-
-/**
- * Bouncy Ball Ball Bonanza
- * Pippin Barr
+ * Jeffrey got the moves. You know what im saying!
  * 
- * The starting point for a ball-bouncing experience of
- * epic proportions!
- */
-
+*/
 "use strict";
 
 // Our ball
