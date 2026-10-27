@@ -1,6 +1,6 @@
 /**
- * Title of Project
- * Author Name
+ * Jim Chasing
+ * John Hanna
  * 
  * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
  * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
@@ -76,8 +76,4 @@ function keyPressed(event) {
     else if (event.key === "w") {
         jim.velocity.y -= 0.1;
     }
-}
-
-function keyCode(event) {
-    if 
 }
