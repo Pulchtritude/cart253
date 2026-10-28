@@ -8,7 +8,7 @@
 
 "use strict";
 
-const jim = {
+const jimPerson = {
     x: 500,
     y: 500,
     size: 100,
@@ -19,7 +19,7 @@ const jim = {
     }
 };
 
-const cat = {
+const catPerson = {
     x: 500,
     y: 500,
     size: 100,
@@ -42,38 +42,38 @@ function setup() {
  * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
 */
 function draw() {
-    drawPerson(jim);
-    drawPerson(cat);
-    movePerson(jim);
-    movePerson(cat);
+    drawPerson(jimPerson);
+    drawPerson(catPerson);
+    movePerson(jimPerson);
+    movePerson(catPerson);
 }
 
-function drawPerson(jim) {
+function drawPerson(person) {
 
     rectMode(CENTER);
 
     push();
-    fill(jim.color);
-    rect(jim.x, jim.y, jim.size);
+    fill(person.color);
+    rect(person.x, person.y, person.size);
     pop();
 }
 
-function movePerson(jim) {
-    jim.x += jim.velocity.x;
-    jim.y += jim.velocity.y;
+function movePerson(person) {
+    person.x += person.velocity.x;
+    person.y += person.velocity.y;
 }
 
 function keyPressed(event) {
     if (event.key === "a") {
-        jim.velocity.x -= 0.1;
+        jimPerson.velocity.x -= 0.1;
     }
     else if (event.key === "d") {
-        jim.velocity.x += 0.1;
+        jimPerson.velocity.x += 0.1;
     }
     else if (event.key === "s") {
-        jim.velocity.y += 0.1;
+        jimPerson.velocity.y += 0.1;
     }
     else if (event.key === "w") {
-        jim.velocity.y -= 0.1;
+        jimPerson.velocity.y -= 0.1;
     }
 }
