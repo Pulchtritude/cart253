@@ -16,7 +16,7 @@ let angry = {
     rage: 5,
 };
 
-const sadFace = {
+let sadFace = {
     x: 700,
     y: 300,
     size: 100,
@@ -26,11 +26,11 @@ const sadFace = {
     }
 };
 
-const happyFace = {
+let happyFace = {
     x: 500,
     y: 500,
     size: 100,
-    color: "#ff00b7",
+    color: "#f6ff00",
     velocity: {
         y: 0.05,
     }
@@ -41,18 +41,21 @@ const happyFace = {
 */
 function setup() {
     createCanvas(1000, 1000);
+    background(255);
 }
 
 /**
  * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
 */
 function draw() {
-    drawFace(sadFace);
-    drawFace(happyFace);
-    drawAngry();
-    moveAngry();
     moveFace(sadFace);
     moveFace(happyFace);
+    moveAngry();
+    drawFace(sadFace);
+    drawFace(happyFace);
+
+    drawAngry();
+
 }
 
 function drawFace(face) {
@@ -61,7 +64,6 @@ function drawFace(face) {
     ellipse(face.x, face.y, face.size);
     fill(face.color);
     pop();
-
 }
 
 function drawAngry() {
