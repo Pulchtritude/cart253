@@ -1,9 +1,8 @@
 /**
- * Title of Project
- * Author Name
+ * Speech Speech!
+ * John Hanna
  * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * Interactive speech-playing interface!
  */
 
 "use strict";
