@@ -17,11 +17,11 @@ const markPlanet = {
     // Position and size
     x: 500,
     y: 500,
-    size: 100,
+    size: 0.1,
     // Fills
     color: "#1e00ff",
     // Size Modifer
-    mod: 5,
+    mod: 3,
     // Size Debuff
     debuff: 1000,
 };
@@ -35,11 +35,11 @@ const jakePlanet = {
     // Position and size
     x: 500,
     y: 500,
-    size: 100,
+    size: 0.1,
     // Fills
     color: "#a31c9a",
     // Size Modifer
-    mod: 5,
+    mod: 3,
     // Size Debuff
     debuff: 1000,
 };
@@ -53,11 +53,11 @@ const jayPlanet = {
     // Position and size
     x: 500,
     y: 500,
-    size: 100,
+    size: 0.1,
     // Fills
     color: "#ff0000",
     // Size Modifer
-    mod: 5,
+    mod: 3,
     // Size Debuff
     debuff: 1000,
 };
@@ -95,8 +95,7 @@ function draw() {
 
 /**
  * Defines a function that uses shared logic
- * to draw planets:
- * Organization!
+ * to draw planets: Organization!
 */
 function drawPlanet(planet) {
 

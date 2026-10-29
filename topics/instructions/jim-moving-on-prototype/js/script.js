@@ -9,6 +9,11 @@
 
 "use strict";
 
+/**
+ * Defines a constant named Jim that uses "person" for function grouping
+ * This constant contains data needed to draw him, as well as to define
+ * movement logic
+*/
 const jimPerson = {
     // Position and size
     x: 500,
@@ -23,6 +28,11 @@ const jimPerson = {
     }
 };
 
+/**
+ * Defines a constant named Cat that uses "person" for function grouping
+ * This constant contains data needed to draw her, as well as to define
+ * movement logic
+*/
 const catPerson = {
     // Position and size
     x: 500,
