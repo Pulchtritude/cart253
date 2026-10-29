@@ -1,9 +1,8 @@
 /**
- * Title of Project
- * Author Name
+ * Planet Layers
+ * John Hanna
  * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * Planets are competing for dominating, leaving a trail of their destruction in space
  */
 
 "use strict";
@@ -15,22 +14,25 @@ const markPlanet = {
     size: 100,
     color: "#1e00ff",
     mod: 5,
+    debuff: 1000,
 };
 
 const jakePlanet = {
     x: 500,
     y: 500,
     size: 100,
-    color: "#f6ff00",
+    color: "#a31c9a",
     mod: 5,
+    debuff: 1000,
 };
 
 const jayPlanet = {
     x: 500,
     y: 500,
     size: 100,
-    color: "#3cff00",
+    color: "#ff0000",
     mod: 5,
+    debuff: 1000,
 };
 
 
@@ -54,8 +56,13 @@ function draw() {
     drawPlanet(jakePlanet);
     drawPlanet(jayPlanet);
 
-    planetSizer();
-    planetSizer()
+    planetSizer(markPlanet);
+    planetSizer(jakePlanet);
+    planetSizer(jayPlanet);
+
+    planetDebuffer(markPlanet);
+    planetDebuffer(jakePlanet);
+    planetDebuffer(jayPlanet);
 
 }
 
@@ -64,16 +71,21 @@ function drawPlanet(planet) {
     ellipseMode(CENTER);
 
     push();
-    noStroke();
+    //noStroke();
     fill(planet.color);
     ellipse(planet.x, planet.y, planet.size)
     pop();
-
-
-
 
 }
 
 function planetSizer(planet) {
     planet.size += random(-planet.mod, planet.mod);
+
+
+}
+
+function planetDebuffer(planet) {
+    if (planet.size > planet.size) {
+        planet.size += random(-planet.debuff, -planet.mod);
+    }
 }
