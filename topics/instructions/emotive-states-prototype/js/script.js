@@ -8,7 +8,7 @@
 
 "use strict";
 
-let angry = {
+const angryFace = {
     x: 300,
     y: 300,
     size: 100,
@@ -16,7 +16,7 @@ let angry = {
     rage: 5,
 };
 
-let sadFace = {
+const sadFace = {
     x: 700,
     y: 300,
     size: 100,
@@ -26,7 +26,7 @@ let sadFace = {
     }
 };
 
-let happyFace = {
+const happyFace = {
     x: 500,
     y: 500,
     size: 100,
@@ -50,11 +50,12 @@ function setup() {
 function draw() {
     moveFace(sadFace);
     moveFace(happyFace);
+    moveFace(angryFace);
     moveAngry();
     drawFace(sadFace);
     drawFace(happyFace);
+    drawFace(angryFace);
 
-    drawAngry();
 
 }
 
@@ -66,17 +67,8 @@ function drawFace(face) {
     pop();
 }
 
-function drawAngry() {
-    push();
-    noStroke();
-    ellipse(angry.x, angry.y, angry.size);
-    fill(angry.color);
-    pop();
-}
-
 function moveAngry() {
-    angry.x += random(-angry.rage, angry.rage);
-    angry.y += random(-angry.rage, angry.rage);
+    angryFace.x += random(-angryFace.rage, angryFace.rage);
 }
 
 function moveFace(face) {
