@@ -35,7 +35,7 @@ const sadFace = {
     emotion: "#0073ff",
     rage: 0,
     velocity: {
-        y: -0.05,
+        y: 0.05,
     }
 };
 
@@ -51,7 +51,7 @@ const happyFace = {
     emotion: "#f6ff00",
     rage: 0,
     velocity: {
-        y: 0.05,
+        y: -0.05,
     }
 };
 
@@ -91,8 +91,8 @@ function draw() {
 function drawFace(face) {
     push();
     //noStroke();
-    ellipse(face.x, face.y, face.size);
     fill(face.emotion);
+    ellipse(face.x, face.y, face.size);
     pop();
 }
 
