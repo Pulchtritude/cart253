@@ -70,6 +70,21 @@ This website serves as a working archive of all the prototypes I have created in
 - [Code](https://github.com/Pulchtritude/cart253/blob/main/topics/instructions/fading-pink-sunset-prototype/js/script.js)
 > ![sunset](./images/sunset.png)
 
+### Emotive States - Prototyping: Functions
+- [View Online](https://pulchtritude.github.io/cart253/topics/instructions/emotive-states-prototype/index.html)
+- [Code](https://github.com/Pulchtritude/cart253/blob/main/topics/instructions/emotive-states-prototype/js/script.js)
+> ![](./images/emotive.png)
+
+### Planet Layers - Prototyping: Functions
+- [View Online](https://pulchtritude.github.io/cart253/topics/instructions/planet-layers-prototype/index.html)
+- [Code](https://github.com/Pulchtritude/cart253/blob/main/topics/instructions/planet-layers-prototype/js/script.js)
+> ![](./images/planet.png)
+
+### Jim Moving On - Prototyping: Functions
+- [View Online](https://pulchtritude.github.io/cart253/topics/instructions/jim-moving-on-prototype/index.html)
+- [Code](https://github.com/Pulchtritude/cart253/blob/main/topics/instructions/jim-moving-on-prototype/js/script.js)
+> ![](./images/jim.png)
+
 ## Challenges
 
 ### Landscape
