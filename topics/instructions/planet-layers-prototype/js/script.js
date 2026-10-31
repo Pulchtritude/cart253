@@ -21,7 +21,7 @@ const markPlanet = {
     // Fills
     color: "#1e00ff",
     // Size Modifer
-    mod: 3,
+    mod: 0.1,
     // Size Debuff
     debuff: 1000,
 };
@@ -39,7 +39,7 @@ const jakePlanet = {
     // Fills
     color: "#a31c9a",
     // Size Modifer
-    mod: 3,
+    mod: 0.1,
     // Size Debuff
     debuff: 1000,
 };
@@ -57,7 +57,7 @@ const jayPlanet = {
     // Fills
     color: "#ff0000",
     // Size Modifer
-    mod: 3,
+    mod: 0.1,
     // Size Debuff
     debuff: 1000,
 };
