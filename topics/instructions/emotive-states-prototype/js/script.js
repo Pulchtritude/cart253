@@ -1,9 +1,10 @@
 /**
- * Title of Project
- * Author Name
+ * Emotive States
+ * John Hanna
  * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * Uses functions to communicate emotive states (anger, sadness, and happiness) through movement. 
+ * Perhaps, the arguement here is that when you are an emotive state, you are only in that state until
+ * you "inhabit" one of the other two.
  */
 
 "use strict";
