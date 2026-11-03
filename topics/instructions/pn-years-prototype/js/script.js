@@ -1,14 +1,17 @@
 /**
  * Positive or Negative Years?
- * Author Name
+ * John Hanna
  * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * "Do you associate more positively or negatively with the following years?"
  */
 
 "use strict";
 
-const years = ["Do you associate positively or negatively with the these years:", "2024", "2022", "2020", "2008", "2001", "1994", "1986", "1972", "1968", "1939", "1914"];
+const years =
+    ["Do you associate positively or negatively with the following years?",
+        "Press 'p' for posittivity, and 'n' for negativity",
+        "2024", "2022", "2020", "2008", "2001", "1994", "1986", "1972", "1968", "1939", "1914",
+        "Did you associate more positively or negatively with the this set of years?"];
 
 let procon = []
 
