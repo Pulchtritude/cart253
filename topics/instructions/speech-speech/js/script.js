@@ -35,7 +35,7 @@ function draw() {
     fill(255);
     textSize(32);
     textAlign(CENTER, CENTER);
-    tex(currentLine, width / 2, height / 2);
+    text(currentLine, width / 2, height / 2);
     pop();
 }
 
