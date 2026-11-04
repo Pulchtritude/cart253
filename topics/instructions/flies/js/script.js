@@ -1,6 +1,6 @@
 /**
  * Flies
- * Pippin Barr
+ * John Hanna
  * 
  * A program for drawing flies on the canvas. The flies are stored
  * in an array.
