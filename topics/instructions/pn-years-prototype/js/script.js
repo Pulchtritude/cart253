@@ -19,15 +19,37 @@ let yearsIndex = 0;
 
 let pros = [];
 
-let prosIndex = undefined;
+let prosIndex = 0;
 
 let cons = [];
+
+let consIndex = 0;
 
 /**
  * OH LOOK I DIDN'T DESCRIBE SETUP!!
 */
 function setup() {
     createCanvas(1000, 1000);
+}
+
+function createPro() {
+    const pro = {
+        x: random(100, 900),
+        y: random(100, 900),
+        size: 50,
+        fill: "#04ff00",
+    };
+    return pro;
+}
+
+function createCon() {
+    const con = {
+        x: random(100, 900),
+        y: random(100, 900),
+        size: 50,
+        fill: "#ff0000",
+    };
+    return con;
 }
 
 
@@ -39,12 +61,11 @@ function draw() {
     drawText();
 
     for (let pro of pros) {
-        drawPro(pro1);
-
+        drawPro(pro);
     }
 
     for (let con of cons) {
-        drawCon(con1);
+        drawCon(con);
     }
 }
 
@@ -62,50 +83,33 @@ function drawText() {
     pop();
 }
 
-function createPro() {
-    const newPro = {
-        x: random(100, 900),
-        y: random(100, 900),
-        size: 50,
-        fill: "#04ff00",
-    };
-    return newPro;
-}
-
-function createCon() {
-    const newCon = {
-        x: random(100, 900),
-        y: random(100, 900),
-        size: 50,
-        fill: "#ff0000",
-    };
-    return newCon;
-}
-
-function drawPro(pros) {
+function drawPro(pro) {
 
     push();
-    fill(pros.fill)
-    ellipse(pros.x, pros.y, pros.size)
+    fill(pro.fill);
+    ellipse(pro.x, pro.y, pro.size);
     pop();
 }
 
-function drawCon(cons) {
+function drawCon(con) {
     push();
-    fill(cons.fill)
-    ellipse(cons.x, cons.y, cons.size)
+    fill(con.fill);
+    ellipse(con.x, con.y, con.size);
     pop();
 }
 
 function keyPressed(event) {
 
+    const newPro = createPro();
+    const newCon = createCon();
+
     if (event.key === "p") {
-        pros.push(createPro());
+        pros.push(newPro);
         yearsIndex = yearsIndex + 1;
     }
 
     else if (event.key === "n") {
-        cons.push(createCon());
+        cons.push(newCon);
         yearsIndex = yearsIndex + 1;
     }
 
@@ -115,6 +119,9 @@ function keyPressed(event) {
 
     else if (yearsIndex >= years.length) {
         yearsIndex = 0;
+        prosIndex = 0;
+        consIndex = 0;
+
     }
 }
 
