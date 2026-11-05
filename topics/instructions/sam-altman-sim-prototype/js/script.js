@@ -40,12 +40,13 @@ function createRam() {
     return ram;
 }
 /**
- * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
+ * Draws the scene (image and ram)
 */
 function draw() {
+    // Draws image of sam altman at the center of the canvas
     imageMode(CENTER);
     image(sam, width / 2, height / 2);
-
+    // 
     for (let ram of rams) {
         if (millis() - ram.created <= 5000) {
             drawRam(ram);
