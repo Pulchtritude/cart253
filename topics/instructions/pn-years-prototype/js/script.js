@@ -8,12 +8,12 @@
 "use strict";
 
 const years =
-    ["Do you associate positively or negatively with the following years?",
-        "Press 'p' for posittivity, and 'n' for negativity",
+    ["Do you associate positively or negatively with the following years? Press 'i' to continue",
+        "Press 'p' for posittivity,'n' for negativity, and 'i' to remain indifferent",
         "2026", "2025", "2024", "2023", "2022", "2021", "2020", "2019", "2018", "2017", "2016",
         "2015", "2014", "2013", "2012", "2011", "2010", "2009", "2008", "2007", "2006", "2005",
         "2004", "2003", "2002", "2001", "2000", "1999", "1998", "1997", "1996", "1995",
-        "Did you associate more positively or negatively with the this set of years?"];
+        "Did you associate more positively or negatively with the this set of years? Evalute and press 'ctrl + r' to reset"];
 
 let yearsIndex = 0;
 
@@ -52,7 +52,6 @@ function createCon() {
     return con;
 }
 
-
 /**
  * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
 */
@@ -77,7 +76,7 @@ function drawText() {
 
     push();
     fill(0);
-    textSize(30);
+    textSize(20);
     textAlign(CENTER, CENTER);
     text(currentLine, width / 2, height / 2);
     pop();
