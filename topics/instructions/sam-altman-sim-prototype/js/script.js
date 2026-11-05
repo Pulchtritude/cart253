@@ -10,10 +10,14 @@
  */
 
 "use strict";
+/**
+ * Defines the default/starting line in the pros array on program startup
+*/
 let sam;
-
+/**
+ * Defines the default/starting line in the pros array on program startup
+*/
 let rams = [];
-
 /**
  * OH LOOK I DIDN'T DESCRIBE SETUP!!
 */
@@ -21,7 +25,9 @@ async function setup() {
     createCanvas(1000, 1000);
     sam = await loadImage('assets/images/sam.png');
 }
-
+/**
+ * Defines the default/starting line in the pros array on program startup
+*/
 function createRam() {
     let ram = {
         x: mouseX,
@@ -33,7 +39,6 @@ function createRam() {
     }
     return ram;
 }
-
 /**
  * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
 */
@@ -47,14 +52,18 @@ function draw() {
         }
     }
 }
-
+/**
+ * Defines the default/starting line in the pros array on program startup
+*/
 function drawRam(ram) {
     push();
     fill(ram.color);
     rect(ram.x, ram.y, ram.w, ram.h);
     pop();
 }
-
+/**
+ * Defines the default/starting line in the pros array on program startup
+*/
 function mousePressed() {
     const newRam = createRam();
     rams.push(newRam);

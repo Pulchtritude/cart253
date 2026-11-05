@@ -7,15 +7,17 @@
  */
 
 "use strict";
-
+/**
+ * Defines the default/starting line in the pros array on program startup
+*/
 let covers = [];
-
+/**
+ * Defines the default/starting line in the pros array on program startup
+*/
 let currentCover;
-
 /**
  * OH LOOK I DIDN'T DESCRIBE SETUP!!
 */
-
 function preload() {
 
     // This repetition can almost certainly be alleviated,
@@ -31,20 +33,22 @@ function preload() {
     covers[8] = loadImage('assets/images/hearts.jpg');
     covers[9] = loadImage('assets/images/spider.jpg');
 }
-
+/**
+ * Defines the default/starting line in the pros array on program startup
+*/
 function setup() {
     createCanvas(1000, 1000);
     currentCover = random(covers);
 }
-
-
 /**
  * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
 */
 function draw() {
     drawCover();
 }
-
+/**
+ * Defines the default/starting line in the pros array on program startup
+*/
 function drawCover() {
     background(255);
     if (currentCover) {
@@ -52,6 +56,9 @@ function drawCover() {
         image(currentCover, width / 2, height / 2);
     }
 }
+/**
+ * Defines the default/starting line in the pros array on program startup
+*/
 function mousePressed() {
     currentCover = random(covers);
 }

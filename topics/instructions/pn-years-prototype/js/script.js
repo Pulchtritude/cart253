@@ -6,7 +6,10 @@
  */
 
 "use strict";
-
+/**
+ * Defines an array that is filled with lines of "dialogue"
+ * These get called in the specific order they are presented
+*/
 const years =
     ["Do you associate positively or negatively with the following years? Press 'i' to continue",
         "Press 'p' for posittivity,'n' for negativity, and 'i' to remain indifferent",
@@ -14,24 +17,37 @@ const years =
         "2015", "2014", "2013", "2012", "2011", "2010", "2009", "2008", "2007", "2006", "2005",
         "2004", "2003", "2002", "2001", "2000", "1999", "1998", "1997", "1996", "1995",
         "Did you associate more positively or negatively with the this set of years? Evalute and press 'ctrl + r' to reset"];
-
-let yearsIndex = 0;
-
-let pros = [];
-
-let prosIndex = 0;
-
-let cons = [];
-
-let consIndex = 0;
-
 /**
- * OH LOOK I DIDN'T DESCRIBE SETUP!!
+ * Defines the default/starting line in the years array on program startup
+*/
+let yearsIndex = 0;
+/**
+ * Defines an empty array called pros.
+ * "pro circles" are get pushed into this array
+*/
+let pros = [];
+/**
+ * Defines the default/starting line in the pros array on program startup
+*/
+let prosIndex = 0;
+/**
+ * Defines an empty array called cons.
+ * "con circles" are get pushed into this array
+*/
+let cons = [];
+/**
+ * Defines the default/starting line in the cons array on program startup
+*/
+let consIndex = 0;
+/**
+ * Creates Canvas
 */
 function setup() {
     createCanvas(1000, 1000);
 }
-
+/**
+ * Defines the default/starting line in the pros array on program startup
+*/
 function createPro() {
     const pro = {
         x: random(100, 900),
@@ -41,7 +57,9 @@ function createPro() {
     };
     return pro;
 }
-
+/**
+ * Defines the default/starting line in the pros array on program startup
+*/
 function createCon() {
     const con = {
         x: random(100, 900),
@@ -51,7 +69,6 @@ function createCon() {
     };
     return con;
 }
-
 /**
  * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
 */
@@ -67,7 +84,9 @@ function draw() {
         drawCon(con);
     }
 }
-
+/**
+ * Defines the default/starting line in the pros array on program startup
+*/
 function drawText() {
 
     background("#ffea00");
@@ -81,7 +100,9 @@ function drawText() {
     text(currentLine, width / 2, height / 2);
     pop();
 }
-
+/**
+ * Defines the default/starting line in the pros array on program startup
+*/
 function drawPro(pro) {
 
     push();
@@ -89,14 +110,18 @@ function drawPro(pro) {
     ellipse(pro.x, pro.y, pro.size);
     pop();
 }
-
+/**
+ * Defines the default/starting line in the pros array on program startup
+*/
 function drawCon(con) {
     push();
     fill(con.fill);
     ellipse(con.x, con.y, con.size);
     pop();
 }
-
+/**
+ * Defines the default/starting line in the pros array on program startup
+*/
 function keyPressed(event) {
 
     const newPro = createPro();
