@@ -11,7 +11,7 @@
 
 "use strict";
 /**
- * Defines the default/starting line in the pros array on program startup
+ * Defines a variable called sam, 
 */
 let sam;
 /**
