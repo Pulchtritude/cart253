@@ -2,25 +2,60 @@
  * Sam Altman Sim
  * John Hanna
  * 
- * When you click on screen, push into the array a stick of ram (a rectangle) 
- * at said location you clicked (mouseX, mouseY). 
- * After waiting 5 seconds, Sam Altman will snatch your ram 
- * (rectangle will disappear after 5 seconds followed by a snatch sound)
+ * Your a ram manufacturer...
+ * When you click on screen,
+ * at said location you clicked (mouseX, mouseY), 
+ * you create a ram stick.
+ * After waiting 3 seconds, Sam Altman will take it away from you
  */
 
 "use strict";
+let sam;
+
+let rams = [];
 
 /**
  * OH LOOK I DIDN'T DESCRIBE SETUP!!
 */
-function setup() {
-
+async function setup() {
+    createCanvas(1000, 1000);
+    sam = await loadImage('assets/images/sam.png');
 }
 
+function createRam() {
+    let ram = {
+        x: mouseX,
+        y: mouseY,
+        w: 25,
+        h: 50,
+        color: "#636363",
+        created: millis(),
+    }
+    return ram;
+}
 
 /**
  * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
 */
 function draw() {
+    imageMode(CENTER);
+    image(sam, width / 2, height / 2);
 
+    for (let ram of rams) {
+        if (millis() - ram.created <= 5000) {
+            drawRam(ram);
+        }
+    }
+}
+
+function drawRam(ram) {
+    push();
+    fill(ram.color);
+    rect(ram.x, ram.y, ram.w, ram.h);
+    pop();
+}
+
+function mousePressed() {
+    const newRam = createRam();
+    rams.push(newRam);
 }
