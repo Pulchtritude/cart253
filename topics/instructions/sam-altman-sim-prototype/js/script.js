@@ -12,14 +12,18 @@
 "use strict";
 /**
  * Defines a variable called sam, 
+ * the image of Sam Altman that gets called in 
+ * async setup
 */
 let sam;
 /**
- * Defines the default/starting line in the pros array on program startup
+ * Defines an empty array called rams.
+ * On mouse presses,
+ * ram objects get pushed into the array
 */
 let rams = [];
 /**
- * OH LOOK I DIDN'T DESCRIBE SETUP!!
+ * Creates canvas and loads Sam Altman of Open AI
 */
 async function setup() {
     createCanvas(1000, 1000);
