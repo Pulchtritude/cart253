@@ -8,27 +8,30 @@
 
 "use strict";
 
-const covers = [];
+let covers = [];
+
+let currentCover;
 
 /**
  * OH LOOK I DIDN'T DESCRIBE SETUP!!
 */
 
 function preload() {
-    covers.push(loadImage('assets/images/resist.jpg'));
-    covers.push(loadImage('assets/images/shadow.jpg'));
-    covers.push(loadImage('assets/images/jedi.jpg'));
-    covers.push(loadImage('assets/images/asura.jpg'));
-    covers.push(loadImage('assets/images/leaf.jpg'));
-    covers.push(loadImage('assets/images/dante.jpg'));
-    covers.push(loadImage('assets/images/ffxv.jpg'));
-    covers.push(loadImage('assets/images/azure.jpg'));
-    covers.push(loadImage('assets/images/hearts.jpg'));
-    covers.push(loadImage('assets/images/spider.jpg'));
+    covers[0] = loadImage('assets/images/resist.jpg');
+    covers[1] = loadImage('assets/images/shadow.jpg');
+    covers[2] = loadImage('assets/images/jedi.jpg');
+    covers[3] = loadImage('assets/images/asura.jpg');
+    covers[4] = loadImage('assets/images/leaf.jpg');
+    covers[5] = loadImage('assets/images/dante.jpg');
+    covers[6] = loadImage('assets/images/ffxv.jpg');
+    covers[7] = loadImage('assets/images/azure.jpg');
+    covers[8] = loadImage('assets/images/hearts.jpg');
+    covers[9] = loadImage('assets/images/spider.jpg');
 }
 
 function setup() {
-    createCanvas(1000, 1000)
+    createCanvas(1000, 1000);
+    currentCover = random(covers);
 }
 
 
@@ -36,9 +39,17 @@ function setup() {
  * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
 */
 function draw() {
-    background(255)
+    drawCover();
+
 }
 
+function drawCover() {
+    background(255);
+    if (currentCover) {
+        imageMode(CENTER);
+        image(currentCover, width / 2, height / 2);
+    }
+}
 function mousePressed() {
-
+    currentCover = random(covers);
 }
