@@ -17,6 +17,9 @@ let currentCover;
 */
 
 function preload() {
+
+    // This repetition can almost certainly be alleviated,
+    // but im not sure how to do so in this particular context
     covers[0] = loadImage('assets/images/resist.jpg');
     covers[1] = loadImage('assets/images/shadow.jpg');
     covers[2] = loadImage('assets/images/jedi.jpg');
