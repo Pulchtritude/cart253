@@ -40,7 +40,6 @@ function setup() {
 */
 function draw() {
     drawCover();
-
 }
 
 function drawCover() {
