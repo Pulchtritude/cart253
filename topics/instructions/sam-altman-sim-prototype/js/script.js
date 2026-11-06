@@ -2,7 +2,7 @@
  * Sam Altman Sim
  * John Hanna
  * 
- * Your a ram manufacturer...
+ * You're a ram manufacturer...
  * When you click on screen,
  * at said location you clicked (mouseX, mouseY), 
  * you create a ram stick.
