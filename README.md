@@ -85,6 +85,21 @@ This website serves as a working archive of all the prototypes I have created in
 - [Code](https://github.com/Pulchtritude/cart253/blob/main/topics/instructions/jim-moving-on-prototype/js/script.js)
 > ![](./images/jim.png)
 
+### Random Game Presentation - Prototyping: Arrays
+- [View Online](https://pulchtritude.github.io/cart253/topics/instructions/random-game-presentation-prototype/index.html)
+- [Code](https://github.com/Pulchtritude/cart253/blob/main/topics/instructions/random-game-presentation-prototype/js/script.js)
+> ![](./images/present.png)
+
+### Positive / Negative - Prototyping: Arrays
+- [View Online](https://pulchtritude.github.io/cart253/topics/instructions/pn-years-prototype/index.html)
+- [Code](https://github.com/Pulchtritude/cart253/blob/main/topics/instructions/pn-years-prototype/js/script.js)
+> ![](./images/pn.png)
+
+### Sam Altman Sim - Prototyping: Arrays
+- [View Online](https://pulchtritude.github.io/cart253/topics/instructions/sam-altman-sim-prototype/index.html)
+- [Code](https://github.com/Pulchtritude/cart253/blob/main/topics/instructions/sam-altman-sim-prototype/js/script.js)
+> ![](./images/sam.png)
+
 ## Challenges
 
 ### Landscape
