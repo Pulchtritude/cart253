@@ -10,35 +10,42 @@
  */
 
 "use strict";
+
 /**
  * Defines a variable called sam, 
- * the image of Sam Altman that gets called in 
- * async setup
+ * this referrs to the Sam Altman image file 
+ * that gets called in async setup
 */
 let sam;
+
 /**
  * Defines an empty array called rams.
  * On mouse presses,
  * ram objects get pushed into the array
 */
 let rams = [];
+
 /**
- * Creates canvas and loads Sam Altman of Open AI
+ * Creates canvas and loads an image of Mr. Sam Altman of Open AI
 */
 async function setup() {
     createCanvas(1000, 1000);
     sam = await loadImage('assets/images/sam.png');
 }
+
 /**
- * Defines the default/starting line in the pros array on program startup
+ * Defines paramters needed to create a stick of ram and returns it
 */
 function createRam() {
     let ram = {
+        // Position and size parameters
         x: mouseX,
         y: mouseY,
         w: 25,
         h: 50,
+        // Fill
         color: "#636363",
+        // Timer
         created: millis(),
     }
     return ram;
@@ -50,15 +57,22 @@ function draw() {
     // Draws image of sam altman at the center of the canvas
     imageMode(CENTER);
     image(sam, width / 2, height / 2);
-    // 
+    // A "for of" loop is used to go through
+    // all the ram objects in ram
     for (let ram of rams) {
-        if (millis() - ram.created <= 5000) {
+        // If (milliseconds - milliseconds value of ram created
+        // is less than or equal to 3 seconds,
+        // Ram will keep drawing in the place where it was clicked on the canvas
+        if (millis() - ram.created <= 3000) {
             drawRam(ram);
         }
     }
 }
+
 /**
- * Defines the default/starting line in the pros array on program startup
+ * Defines a function called draw ram
+ * that draws a ram stick based on the parameters
+ * stored in ram variable found in the createRam function
 */
 function drawRam(ram) {
     push();
@@ -66,10 +80,13 @@ function drawRam(ram) {
     rect(ram.x, ram.y, ram.w, ram.h);
     pop();
 }
+
 /**
- * Defines the default/starting line in the pros array on program startup
+ * Add a new stick of ram into the rams array
 */
 function mousePressed() {
+    // When player presses mouse, 
+    // a new stick of ram is added into the rams array
     const newRam = createRam();
     rams.push(newRam);
 }
