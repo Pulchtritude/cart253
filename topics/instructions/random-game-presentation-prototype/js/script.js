@@ -1,26 +1,36 @@
 /**
- * Random Presentation
+ * Random Game Presentation
  * John Hanna
  * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * People like to make top 10 lists of their favorite games, 
+ * and im one of those people.
+ * Though, what if I had to present this list not just out of order, 
+ * but completely at random, how could that affect the way I talk about each game?
+ * 
+ * This list is top 10 games i've played in 2026 so far
+ * 
  */
 
 "use strict";
+
 /**
- * Defines the default/starting line in the pros array on program startup
+ * Defines an array called covers, 
+ * all the image files get placed into this array in preload
 */
 let covers = [];
+
 /**
- * Defines the default/starting line in the pros array on program startup
+ * Defines the function called currentCover.
+ * This is used to display a random cover
 */
 let currentCover;
+
 /**
- * OH LOOK I DIDN'T DESCRIBE SETUP!!
+ * Preload function for image files
 */
 function preload() {
-
-    // This repetition can almost certainly be alleviated,
+    // This loads all the images into the array
+    // Yes, I am aware that this repetition can almost certainly be alleviated,
     // but im not sure how to do so in this particular context
     covers[0] = loadImage('assets/images/resist.jpg');
     covers[1] = loadImage('assets/images/shadow.jpg');
@@ -33,31 +43,39 @@ function preload() {
     covers[8] = loadImage('assets/images/hearts.jpg');
     covers[9] = loadImage('assets/images/spider.jpg');
 }
+
 /**
- * Defines the default/starting line in the pros array on program startup
+ * Creates canvas and begins the program with a random cover on screen
 */
 function setup() {
     createCanvas(1000, 1000);
     currentCover = random(covers);
 }
+
 /**
- * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
+ * Calls drawCover to draw the scene
 */
 function draw() {
     drawCover();
 }
+
 /**
- * Defines the default/starting line in the pros array on program startup
+ * Draws a random cover on the screen 
 */
 function drawCover() {
+    // Makes background white
     background(255);
+    // If currentCover is being called,
+    // display a random game cover
     if (currentCover) {
         imageMode(CENTER);
         image(currentCover, width / 2, height / 2);
     }
 }
+
 /**
- * Defines the default/starting line in the pros array on program startup
+ * When player presses mouse, 
+ * currentCover calls a random cover from the array index.
 */
 function mousePressed() {
     currentCover = random(covers);
