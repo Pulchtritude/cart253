@@ -29,7 +29,7 @@ let rams = [];
  * Creates canvas and loads an image of Mr. Sam Altman of Open AI
 */
 async function setup() {
-    createCanvas(1000, 1000);
+    createCanvas(766, 760);
     sam = await loadImage('assets/images/sam.png');
 }
 
