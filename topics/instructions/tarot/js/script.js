@@ -16,7 +16,7 @@ let fortune = "Click to show a fortune.";
 
 // Load tarot data
 function preload() {
-    tarot = loadJSON("assests/data/tarot_interpretations.json");
+    tarot = loadJSON("assets/data/tarot_interpretations.json");
 }
 
 /**

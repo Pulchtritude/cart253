@@ -67,5 +67,12 @@ My third prototype is a kind of funny and satirical reaction to recent discourse
 
 Satire is pretty awesome!
 
+## 11/18/26
+I have yet to begin programming for the final prototype as I have been immensely overwhelmed/swamped with other finals related assignments that are eating away at my time and my mental. I have recently quit my part-time job in order to keep up with all university related activities; after all, as an international student: graduation, maintaining my GPA, and producing knowledge for post-undergraduate opportunities is the highest priority! That said, I would like to use this reflective journal entry to begin documenting a couple different ideas.
 
+To emphasize one thing: as of this moment, I have no interest in producing one large prototype project. To me, that suggests a project with a lot more lines of code than im used to, and unless I choose to flesh out one of my earlier prototypes, I think I would be easily overwhelmed by that prospect. So, I’ll opt to make a cohesive collection of prototypes. And as I write this, I believe I have a couple of options that feel solid.
+
+The first consists of making a collection of prototypes that attempt to represent philosophical and theoretical ideas. A few of my prototypes successfully expressed these ideas; so, it may be a good route to make more and include them in a larger collection with the ones I’ve already made. Other potential concepts I could represent are: Model of Affect, Rhizome, Transcendence, Object Cause of Desire, Object of Desire, and Nostalgia.
+
+My second idea involves creating more imaginative auditory iterations of my FPS prototype. I could begin by fleshing that one out further, then move on to building more imaginative interactive models that represent different video game genres. What would playing an ARPG sound like? A MOBA? And so on and so forth... 
 
