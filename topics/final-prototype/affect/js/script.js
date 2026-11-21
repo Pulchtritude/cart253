@@ -14,6 +14,7 @@ const subjectBody = {
     color: "blue",
     text: 'Subject Body',
     position: 550,
+    velocity: 0,
 };
 
 const impingingBody = {
@@ -23,15 +24,17 @@ const impingingBody = {
     color: "red",
     text: 'Impinging Body',
     position: 550,
+    velocity: 2
 };
 
 const extraBody = {
-    x: 450,
-    y: 700,
+    x: 600,
+    y: 200,
     size: 100,
     color: "black",
     text: 'Extra Body',
     position: 850,
+    velocity: 0,
 };
 
 /**
@@ -49,11 +52,21 @@ function draw() {
     drawBody(impingingBody);
     drawBody(extraBody);
 }
-
 function drawBody(body) {
     push();
     fill(body.color);
     rect(body.x, body.y, body.size);
     text(body.text, body.x, body.position);
     pop();
+}
+
+function moveBody(body) {
+    body.x += body.velocity;
+}
+
+function keyPressed(event) {
+    if (event.key === "d") {
+        moveBody(impingingBody);
+        background(255);
+    }
 }
