@@ -57,14 +57,12 @@ function draw() {
     drawBody(extraBody);
 }
 function drawBody(body) {
-
     push();
     fill(body.color);
     // setAlpha(body.alpha);
     rect(body.x, body.y, body.size);
     text(body.text, body.x, body.position);
     pop();
-
 }
 
 function moveBody(body) {
