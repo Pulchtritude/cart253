@@ -14,7 +14,6 @@ let motherCircle = { // Will be a circle
     color: "white",
     text: 'Subject Body',
     position: y + 250,
-    velocity: 2,
 }
 
 let subject = { // Will be a square
@@ -63,6 +62,14 @@ function drawSubject() {
     fill(subject.color);
     rect(mouseX, mouseY, subject.size);
     text(subject.text, subject.x, subject.position);
+    pop();
+}
+
+function drawfather() {
+    push();
+    fill(father.color);
+    rect(father.x, father.y, father.size);
+    text(father.text, father.x, father.position);
     pop();
 }
 
