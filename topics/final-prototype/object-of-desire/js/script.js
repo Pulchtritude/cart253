@@ -8,35 +8,41 @@
 "use strict";
 
 let motherCircle = { // Will be a circle
-    x: undefined, // will be relative to mouseX
-    y: undefined, // will be relative to mouseY
+    x: x, // will be relative to mouseX
+    y: y, // will be relative to mouseY
     size: 100,
     color: "white",
     text: 'Subject Body',
-    position: y + 250,
+    velocity: {
+        x: 2,
+        y: 2,
+    }
 }
 
 let subject = { // Will be a square
-    x: undefined, // will be mouseX
-    y: undefined, // will be mouseY
+    x: x, // will be mouseX
+    y: y, // will be mouseY
     size: 100,
-    color: "blue",
+    color: "#1e01f9",
     text: 'Subject Body',
     position: y + 250,
 }
 
 let desireCircle = { // Will be a circle
-    x: undefined, // will be relative to mouseX
-    y: undefined, // will be mouseY
+    x: x, // will be relative to mouseX
+    y: y, // will be mouseY
     size: 100,
     color: "red",
     text: 'Object of Desire',
-    position: y + 250,
+    velocity: {
+        x: 2,
+        y: 2,
+    }
 }
 
 let father = { // Will be a triangle
-    x: undefined, // will be mouseX
-    y: undefined, // will be mouseY
+    x: x, // will be mouseX
+    y: y, // will be mouseY
     size: 100,
     color: "black",
     text: 'Subject Body',
@@ -54,6 +60,9 @@ function setup() {
  * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
 */
 function draw() {
+    background(255);
+    drawSubject();
+    drawCircle(motherCircle);
 
 }
 
@@ -79,4 +88,15 @@ function drawCircle(circle) {
     ellipse(circle.x, circle.y, circle.size);
     text(circle.text, circle.x, circle.position);
     pop();
+}
+
+function moveTowards(circle) {
+    // If the mouse is in range it affects the circle objects in the model
+    const d = dist(mouseX, mouseY, circle.x, circle.y);
+    if (d < circle.size) {
+        // Change the circle object's velocity based on the mouse position 
+        // Circle objects will accelerate towards the mouse
+        circle.velocity.x += (circle.x + mouseX) * 0.005;
+        circle.velocity.y += (circle.y + mouseY) * 0.005;
+    }
 }
